@@ -93,6 +93,13 @@ input, select, textarea {
     height: 18px;
 }
 
+#titlebar .custom-logo-link {
+    float: left;
+    margin: 55px 0 0 0;
+    width: 172px;
+    height: 18px;
+}
+
 #titlebar #titlebar_right {
     float: right;
 }

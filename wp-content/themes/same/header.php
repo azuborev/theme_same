@@ -44,7 +44,8 @@
             <!-- BEGIN TITLEBAR -->
             <header id="titlebar">
                 <div class="wrapper">
-                    <a id="logo" href="#"><span></span></a>
+<!--                    <a id="logo" href="#"><span></span></a>-->
+                    <?php the_custom_logo(); ?>
                     <div id="titlebar_right">
                         <ul id="social_icons">
                             <li><a href="#" class="linkedin"></a></li>

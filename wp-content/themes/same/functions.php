@@ -1,7 +1,6 @@
 <?php
 /**
- * same functions and definitions
- * @package same
+ *
  */
 
 if ( ! defined( '_S_VERSION' ) ) {
@@ -11,11 +10,13 @@ if ( ! defined( '_S_VERSION' ) ) {
 if ( ! function_exists( 'same_setup' ) ) :
 
 	function same_setup() {
-        load_theme_textdomain('same', get_template_directory() . '/languages');
-        add_theme_support('post-thumbnails');
+
+        //load file for localization theme
+        load_theme_textdomain( 'same', get_template_directory() . '/languages' );
+
         register_nav_menus(
             [
-                'menu-1' => esc_html__('Primary', 'same'),
+                'menu-1' => esc_html__( 'Primary', 'same' ),
             ]
         );
 
@@ -43,7 +44,9 @@ if ( ! function_exists( 'same_setup' ) ) :
             )
         );
 
-        add_theme_support('custom-logo');
+        add_theme_support( 'custom-logo' );
+        add_theme_support( 'title-tag' );
+        add_theme_support( 'post-thumbnails' );
     }
 
 endif;
@@ -67,22 +70,21 @@ add_action( 'widgets_init', 'same_widgets_init' );
 
 function same_scripts() {
 	wp_enqueue_style( 'same-style', get_stylesheet_uri(), [], _S_VERSION );
-    wp_enqueue_style( 'same-light_style', get_template_directory_uri().'/assets/css/light.css', [], _S_VERSION );
-    wp_style_add_data('same-light_style', 'title', __('light', 'same'));
-    wp_enqueue_style( 'same-dark_style', get_template_directory_uri().'/assets/css/dark.css', [], _S_VERSION );
-    wp_style_add_data('same-dark_style', 'alt', true);
-    wp_style_add_data('same-dark_style', 'title', __('dark', 'same'));
-    wp_enqueue_style( 'same-flexslider_style', get_template_directory_uri().'/assets/css/flexslider.css', [], _S_VERSION );
-    wp_enqueue_style( 'same-prettyPhoto_style', get_template_directory_uri().'/assets/css/prettyPhoto.css', [], _S_VERSION );
-    wp_enqueue_style( 'same-reset_style', get_template_directory_uri().'/assets/css/reset.css', [], _S_VERSION );
-
+    wp_enqueue_style( 'same-light_style', get_template_directory_uri() . '/assets/css/light.css', [], _S_VERSION );
+    wp_style_add_data( 'same-light_style', 'title', __('light', 'same') );
+    wp_enqueue_style( 'same-dark_style', get_template_directory_uri() . '/assets/css/dark.css', [], _S_VERSION );
+    wp_style_add_data( 'same-dark_style', 'alt', true );
+    wp_style_add_data( 'same-dark_style', 'title', __('dark', 'same') );
+    wp_enqueue_style( 'same-flexslider_style', get_template_directory_uri() . '/assets/css/flexslider.css', [], _S_VERSION );
+    wp_enqueue_style( 'same-prettyPhoto_style', get_template_directory_uri() . '/assets/css/prettyPhoto.css', [], _S_VERSION );
+    wp_enqueue_style( 'same-reset_style', get_template_directory_uri() . '/assets/css/reset.css', [], _S_VERSION );
     wp_deregister_script( 'jquery' );
-    wp_enqueue_script( 'same-jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', [], false, true );
-    wp_enqueue_script( 'same-jquery-ui', get_template_directory_uri() . '/assets/js/jquery.ui.min.js', ['same-jquery'], false, true );
-    wp_enqueue_script( 'same-flexslider', get_template_directory_uri() . '/assets/js/jquery.flexslider.min.js', ['same-jquery'], false, true );
-    wp_enqueue_script( 'same-prettyphoto', get_template_directory_uri() . '/assets/js/jquery.prettyphoto.min.js', ['same-jquery'], false, true );
-    wp_enqueue_script( 'same-stylesheettoggle', get_template_directory_uri() . '/assets/js/jquery.stylesheettoggle.js', ['same-jquery'], false, true );
-    wp_enqueue_script( 'same-onload', get_template_directory_uri() . '/assets/js/onload.js', ['same-jquery', 'same-prettyphoto'], false, true );
+    wp_enqueue_script( 'same-jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', [], null, true );
+    wp_enqueue_script( 'same-jquery-ui', get_template_directory_uri() . '/assets/js/jquery.ui.min.js', ['same-jquery'], null, true );
+    wp_enqueue_script( 'same-flexslider', get_template_directory_uri() . '/assets/js/jquery.flexslider.min.js', ['same-jquery'], null, true );
+    wp_enqueue_script( 'same-prettyphoto', get_template_directory_uri() . '/assets/js/jquery.prettyphoto.min.js', ['same-jquery'], null, true );
+    wp_enqueue_script( 'same-stylesheettoggle', get_template_directory_uri() . '/assets/js/jquery.stylesheettoggle.js', ['same-jquery'], null, true );
+    wp_enqueue_script( 'same-onload', get_template_directory_uri() . '/assets/js/onload.js', ['same-jquery', 'same-prettyphoto'], null, true );
 }
 add_action( 'wp_enqueue_scripts', 'same_scripts' );
 

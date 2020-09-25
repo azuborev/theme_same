@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e8122587-b4fb-435f-b022-23d707e472d9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1i0Wb11uVLxUPAoXaIvtv16Y89d" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="/usr/share/php/PHP/CodeSniffer/src/Standards" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e8122587-b4fb-435f-b022-23d707e472d9" name="Default Changelist" comment="" />
+      <created>1601045057493</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601045057493</updated>
+      <workItem from="1601045058587" duration="2457000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="576" y="210" width="824" height="684" key="#PHP_CodeSniffer" timestamp="1601045353387">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="576" y="210" width="824" height="684" key="#PHP_CodeSniffer/67.27.1853.1053@67.27.1853.1053" timestamp="1601045353387" />
+    <state x="771" y="295" width="424" height="513" key="FileChooserDialogImpl" timestamp="1601045641508">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="771" y="295" width="424" height="513" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1601045641508" />
+    <state x="482" y="187" width="1191" height="730" key="SettingsEditor" timestamp="1601046073118">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="482" y="187" width="1191" height="730" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1601046073118" />
+  </component>
+</project>
