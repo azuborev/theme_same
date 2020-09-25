@@ -26,17 +26,6 @@ if ( ! function_exists( 'same_setup' ) ) :
 		 */
 		load_theme_textdomain( 'same', get_template_directory() . '/languages' );
 
-		// Add default posts and comments RSS feed links to head.
-		add_theme_support( 'automatic-feed-links' );
-
-		/*
-		 * Let WordPress manage the document title.
-		 * By adding theme support, we declare that this theme does not use a
-		 * hard-coded <title> tag in the document head, and expect WordPress to
-		 * provide it for us.
-		 */
-		add_theme_support( 'title-tag' );
-
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
@@ -133,12 +122,6 @@ function same_widgets_init() {
 }
 add_action( 'widgets_init', 'same_widgets_init' );
 
-
-
-
-
-
-
 /**
  * Enqueue scripts and styles.
  */
@@ -157,8 +140,9 @@ function same_scripts() {
     wp_enqueue_script( 'same-jquery', get_template_directory_uri() . '/assets/js/jquery.min.js', [], false, true );
     wp_enqueue_script( 'same-jquery-ui', get_template_directory_uri() . '/assets/js/jquery.ui.min.js', ['same-jquery'], false, true );
     wp_enqueue_script( 'same-flexslider', get_template_directory_uri() . '/assets/js/jquery.flexslider.min.js', ['same-jquery'], false, true );
+    wp_enqueue_script( 'same-prettyphoto', get_template_directory_uri() . '/assets/js/jquery.prettyphoto.min.js', ['same-jquery'], false, true );
     wp_enqueue_script( 'same-stylesheettoggle', get_template_directory_uri() . '/assets/js/jquery.stylesheettoggle.js', ['same-jquery'], false, true );
-    wp_enqueue_script( 'same-onload', get_template_directory_uri() . '/assets/js/onload.js', ['same-jquery'], false, true );
+    wp_enqueue_script( 'same-onload', get_template_directory_uri() . '/assets/js/onload.js', ['same-jquery', 'same-prettyphoto'], false, true );
 }
 add_action( 'wp_enqueue_scripts', 'same_scripts' );
 

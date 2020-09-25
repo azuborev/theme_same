@@ -2,58 +2,95 @@
 /**
  * The header for our theme
  *
- * This is the template that displays all of the <head> section and everything up until <div id="content">
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
  * @package same
  */
 
 ?>
-<!doctype html>
+<!DOCTYPE HTML>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php bloginfo( 'charset' ); ?>">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="profile" href="https://gmpg.org/xfn/11">
-
-	<?php wp_head(); ?>
+    <meta charset="<?php echo bloginfo('charset') ?>">
+    <title><?php echo wp_get_document_title(); ?></title>
+    <?php wp_head(); ?>
 </head>
+<body>
 
-<body <?php body_class(); ?>>
-<?php wp_body_open(); ?>
-<div id="page" class="site">
-	<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e( 'Skip to content', 'same' ); ?></a>
+<!-- BEGIN STYLESHEET SWITCHER -->
+<div id="stylesheet_switcher">
+    <a href="#" id="switcher"></a>
+    <ul id="stylesheets">
+        <li>
+            <a href="#" class="sheet" id="light">
+                <span class="image"><img src="./wp-content/themes/same/assets/img/gfx/stylesheet_light.jpg" alt="" /></span>
+                <span class="mask"></span>
+                <span class="name">Light version</span>
+            </a>
+        </li>
+        <li>
+            <a href="#" class="sheet" id="dark">
+                <span class="image"><img src="./wp-content/themes/same/assets/img/gfx/stylesheet_dark.jpg" alt="" /></span>
+                <span class="mask"></span>
+                <span class="name">Dark version</span>
+            </a>
+        </li>
+    </ul>
+</div>
+<!-- END STYLESHEET SWITCHER -->
 
-	<header id="masthead" class="site-header">
-		<div class="site-branding">
-			<?php
-			the_custom_logo();
-			if ( is_front_page() && is_home() ) :
-				?>
-				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				<?php
-			else :
-				?>
-				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-				<?php
-			endif;
-			$same_description = get_bloginfo( 'description', 'display' );
-			if ( $same_description || is_customize_preview() ) :
-				?>
-				<p class="site-description"><?php echo $same_description; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></p>
-			<?php endif; ?>
-		</div><!-- .site-branding -->
+<!-- BEGIN PAGE -->
+<div id="page">
+    <div id="page_top">
+        <div id="page_top_in">
+            <!-- BEGIN TITLEBAR -->
+            <header id="titlebar">
+                <div class="wrapper">
+                    <a id="logo" href="#"><span></span></a>
+                    <div id="titlebar_right">
+                        <ul id="social_icons">
+                            <li><a href="#" class="linkedin"></a></li>
+                            <li><a href="#" class="facebook"></a></li>
+                            <li><a href="#" class="twitter"></a></li>
+                            <li><a href="#" class="rss"></a></li>
+                        </ul>
+                        <div class="clear"></div>
 
-		<nav id="site-navigation" class="main-navigation">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'same' ); ?></button>
-			<?php
-			wp_nav_menu(
-				array(
-					'theme_location' => 'menu-1',
-					'menu_id'        => 'primary-menu',
-				)
-			);
-			?>
-		</nav><!-- #site-navigation -->
-	</header><!-- #masthead -->
+                        <nav>
+                            <ul id="top_menu">
+                                <li class="current"><a href="./index.htm.html">Home</a></li>
+                                <li><a href="./aboutus.htm.html">About Us</a></li>
+                                <li><a href="./blog.htm.html">Blog</a></li>
+                                <li>
+                                    <a href="#">Other</a>
+                                    <div class="submenu">
+                                        <ul>
+                                            <li><a href="./blog-article.htm.html"><span>Single Blog</span></a></li>
+                                            <li><a href="./shortcodes-columns.htm.html"><span>Columns</span></a></li>
+                                            <li><a href="./shortcodes-elements.htm.html"><span>Elemantary</span></a></li>
+                                            <li><a href="./shortcodes-boxes.htm.html"><span>Boxes</span></a></li>
+                                            <li><a href="./shortcodes-typography.htm.html"><span>Typography</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="./portfolio-single.htm.html">Portfolio</a>
+                                    <div class="submenu">
+                                        <ul>
+                                            <li><a href="./portfolio.htm.html#all"><span>All categories</span></a></li>
+                                            <li><a href="./portfolio.htm.html#photography"><span>Photography</span></a></li>
+                                            <li><a href="./portfolio.htm.html#webdesign"><span>Webdesign</span></a></li>
+                                            <li><a href="./portfolio.htm.html#branding"><span>Branding</span></a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li><a href="./gallery.htm.html">Gallery</a></li>
+                                <li><a href="./contact.htm.html">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </header>
+            <!-- END TITLEBAR -->
+
+
+
