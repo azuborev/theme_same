@@ -7,13 +7,12 @@
  * and that other 'pages' on your WordPress site may use a
  * different template.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
  * @package same
  */
 
 get_header();
 ?>
+
 
 	<main id="primary" class="site-main">
 

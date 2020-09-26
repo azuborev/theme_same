@@ -1,19 +1,238 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-    <list default="true" id="e8122587-b4fb-435f-b022-23d707e472d9" name="Default Changelist" comment="">
+    <list default="true" id="0dc40b25-dab5-48a7-a903-d4a76bd80af7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/css/dark.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/css/dark.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/css/flexslider.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/css/flexslider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/css/light.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/css/light.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/css/prettyPhoto.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/css/prettyPhoto.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/above_footer_recent_posts_image.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/above_footer_recent_posts_image.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/buttons/button_big_colors.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/buttons/button_big_colors.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/buttons/button_big_shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/buttons/button_big_shadow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/buttons/button_small_colors.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/buttons/button_small_colors.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/buttons/button_small_shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/buttons/button_small_shadow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_article_image_shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_article_image_shadow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_li_arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_li_arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_li_diamond.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_li_diamond.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_li_tic_green.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_li_tic_green.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_li_tic_grey.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_li_tic_grey.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_map_shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_map_shadow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_page_home_portfolio_caption.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_page_home_portfolio_caption.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_page_home_portfolio_image_shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_page_home_portfolio_image_shadow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_page_text_images_shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_page_text_images_shadow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_slide_shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/content_slide_shadow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/above_footer_list_contact_address.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/above_footer_list_contact_address.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/above_footer_list_contact_email.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/above_footer_list_contact_email.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/above_footer_list_contact_phone.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/above_footer_list_contact_phone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/above_footer_recent_posts_comment.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/above_footer_recent_posts_comment.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_ajaxform_success.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_ajaxform_success.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_breadcrumbs.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_breadcrumbs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_breadcrumbs_left.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_breadcrumbs_left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_breadcrumbs_link.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_breadcrumbs_link.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_breadcrumbs_link_last.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_breadcrumbs_link_last.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_contactform_input.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_contactform_input.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_contactform_input_textarea.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_contactform_input_textarea.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_contactform_input_textarea_shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_contactform_input_textarea_shadow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_dropcap_first.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_dropcap_first.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_dropcap_second.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_dropcap_second.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_dropcap_third.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_dropcap_third.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_iconcap_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_iconcap_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_iconcap_inews.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_iconcap_inews.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_iconcap_italk.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_iconcap_italk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_home_portfolio_caption_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_home_portfolio_caption_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_home_portfolio_eye.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_home_portfolio_eye.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_home_portfolio_image_border.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_home_portfolio_image_border.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_home_pricing_tables_bestvalue.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_home_pricing_tables_bestvalue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_home_pricing_tables_content_li.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_home_pricing_tables_content_li.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_home_readmore.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_home_readmore.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_portfolio_categories.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_portfolio_categories.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_text_q.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_text_q.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_text_table_plus.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_text_table_plus.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_text_table_price.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_page_text_table_price.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_pagenav_arrow_left.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_pagenav_arrow_left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_pagenav_arrow_right.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_pagenav_arrow_right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_pagenav_li.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_pagenav_li.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_portfolio_image_mask.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_portfolio_image_mask.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_searchbar_glass.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_searchbar_glass.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_searchbar_input.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/content_searchbar_input.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/footer_shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/footer_shadow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/footer_up_arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/footer_up_arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/page_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/page_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/page_bottom_repeat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/page_bottom_repeat.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/page_top_repeat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/page_top_repeat.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/plus_minus.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/plus_minus.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_menu_corners.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_menu_corners.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_menu_separator.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_menu_separator.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_menu_shadow_bottom.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_menu_shadow_bottom.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_menu_shadow_right.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_menu_shadow_right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_menu_sub_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_menu_sub_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_social_icons_facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_social_icons_facebook.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_social_icons_linkedin.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_social_icons_linkedin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_social_icons_rss.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_social_icons_rss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_social_icons_twitter.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/titlebar_social_icons_twitter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/top_control_nav.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/dark/top_control_nav.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/above_footer_recent_posts1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/above_footer_recent_posts1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/above_footer_recent_posts2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/above_footer_recent_posts2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/above_footer_recent_posts3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/above_footer_recent_posts3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image197x140.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image197x140.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image197x140_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image197x140_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image197x140_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image197x140_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image197x140_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image197x140_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image209x136.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image209x136.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image262x88.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image262x88.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image276x230.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image276x230.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image276x230_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image276x230_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image276x230_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image276x230_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image276x230_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image276x230_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image276x230_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image276x230_5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image276x230_6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image276x230_6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image446x294.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image446x294.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image446x294_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image446x294_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image446x294_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image446x294_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image446x294_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image446x294_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image50x50.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image50x50.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image689x214.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image689x214.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image689x214_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image689x214_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image689x380.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_image689x380.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_slide606x480.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_slide606x480.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_slide606x480_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_slide606x480_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_slide606x480_3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_slide606x480_3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_slide606x480_4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_slide606x480_4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_slide606x480_5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/content_slide606x480_5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big6.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big6.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big7.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big8.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big8.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big9.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/img_big9.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/top_slide1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/top_slide1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/top_slide2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/top_slide2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/top_slide3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/top_slide3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/top_slide4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/top_slide4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/top_slide5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/examples/top_slide5.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/above_footer_list_contact_address.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/above_footer_list_contact_address.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/above_footer_list_contact_email.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/above_footer_list_contact_email.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/above_footer_list_contact_phone.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/above_footer_list_contact_phone.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/above_footer_recent_posts_comment.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/above_footer_recent_posts_comment.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_ajaxform_success.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_ajaxform_success.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_breadcrumbs.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_breadcrumbs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_breadcrumbs_left.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_breadcrumbs_left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_breadcrumbs_link.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_breadcrumbs_link.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_breadcrumbs_link_last.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_breadcrumbs_link_last.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_contactform_input.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_contactform_input.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_contactform_input_shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_contactform_input_shadow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_contactform_input_textarea.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_contactform_input_textarea.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_contactform_input_textarea_shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_contactform_input_textarea_shadow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_dropcap_first.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_dropcap_first.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_dropcap_second.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_dropcap_second.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_dropcap_third.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_dropcap_third.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_iconcap_icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_iconcap_icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_iconcap_inews.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_iconcap_inews.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_iconcap_italk.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_iconcap_italk.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_home_portfolio_caption_hover.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_home_portfolio_caption_hover.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_home_portfolio_eye.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_home_portfolio_eye.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_home_portfolio_image_border.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_home_portfolio_image_border.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_home_pricing_tables_bestvalue.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_home_pricing_tables_bestvalue.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_home_pricing_tables_content_li.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_home_pricing_tables_content_li.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_home_readmore.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_home_readmore.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_portfolio_categories.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_portfolio_categories.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_text_q.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_text_q.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_text_table_plus.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_text_table_plus.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_text_table_price.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_page_text_table_price.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_pagenav_arrow_left.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_pagenav_arrow_left.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_pagenav_arrow_right.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_pagenav_arrow_right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_pagenav_li.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_pagenav_li.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_portfolio_image_mask.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_portfolio_image_mask.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_searchbar_glass.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_searchbar_glass.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_searchbar_input.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/content_searchbar_input.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/footer_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/footer_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/footer_shadow.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/footer_shadow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/footer_up_arrow.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/footer_up_arrow.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/page_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/page_bg.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/page_bottom.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/page_bottom.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/page_bottom_repeat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/page_bottom_repeat.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/page_top.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/page_top.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/page_top_repeat.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/page_top_repeat.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/plus_minus.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/plus_minus.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/titlebar_menu_corners.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/titlebar_menu_corners.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/titlebar_menu_separator.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/titlebar_menu_separator.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/titlebar_menu_shadow_bottom.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/titlebar_menu_shadow_bottom.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/titlebar_menu_shadow_right.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/titlebar_menu_shadow_right.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/titlebar_social_icons_facebook.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/titlebar_social_icons_facebook.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/titlebar_social_icons_linkedin.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/titlebar_social_icons_linkedin.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/titlebar_social_icons_rss.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/titlebar_social_icons_rss.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/titlebar_social_icons_twitter.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/titlebar_social_icons_twitter.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/top_control_nav.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/top_control_nav.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_rounded/btnNext.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_rounded/btnNext.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_rounded/btnPrevious.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_rounded/btnPrevious.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_rounded/contentPattern.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_rounded/contentPattern.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_rounded/loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_rounded/loader.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_rounded/sprite.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_rounded/sprite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_square/btnNext.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_square/btnNext.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_square/btnPrevious.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_square/btnPrevious.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_square/loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_square/loader.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_square/sprite.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/dark_square/sprite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/default/default_thumb.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/default/default_thumb.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/default/loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/default/loader.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/default/sprite.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/default/sprite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/default/sprite_next.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/default/sprite_next.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/default/sprite_prev.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/default/sprite_prev.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/default/sprite_x.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/default/sprite_x.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/default/sprite_y.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/default/sprite_y.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/btnNext.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/btnNext.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/btnPrevious.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/btnPrevious.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/contentPatternBottom.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/contentPatternBottom.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/contentPatternLeft.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/contentPatternLeft.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/contentPatternRight.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/contentPatternRight.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/contentPatternTop.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/contentPatternTop.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/default_thumbnail.gif" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/default_thumbnail.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/loader.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/sprite.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/facebook/sprite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/light_rounded/btnNext.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/light_rounded/btnNext.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/light_rounded/btnPrevious.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/light_rounded/btnPrevious.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/light_rounded/loader.gif" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/light_rounded/loader.gif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/light_rounded/sprite.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/light_rounded/sprite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/light_square/btnNext.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/light_square/btnNext.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/light_square/btnPrevious.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/light_square/btnPrevious.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/light_square/sprite.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/prettyPhoto/light_square/sprite.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/stylesheet_dark.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/stylesheet_dark.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/stylesheet_light.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/stylesheet_light.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/stylesheet_switcher.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/stylesheet_switcher.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/top_caption.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/top_caption.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/top_direction_nav.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/top_direction_nav.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/js/jquery.flexslider.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/js/jquery.flexslider.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/js/jquery.prettyphoto.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/js/jquery.prettyphoto.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/js/jquery.quicksand.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/js/jquery.quicksand.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/js/jquery.stylesheettoggle.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/js/jquery.stylesheettoggle.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/js/jquery.ui.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/js/jquery.ui.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/js/onload.js" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/js/onload.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/same/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/same/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/languages/ru_RU.mo" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/languages/ru_RU.mo" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/page-main.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/page-main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/page.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/same/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/cropped-logo-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/cropped-logo-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/cropped-logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/cropped-logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo-1-150x18.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo-1-150x18.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo-1.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo-1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo-150x17.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo-150x17.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +245,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="1i0Wb11uVLxUPAoXaIvtv16Y89d" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
+  <component name="ProjectId" id="1i11fGNiyB8FSQvM9nBW6VBMORR" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -34,54 +260,49 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="/usr/share/php/PHP/CodeSniffer/src/Standards" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.path.for.package.eslint" value="project" />
-    <property name="node.js.path.for.package.tslint" value="project" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="last_opened_file_path" value="$USER_HOME$/wpcs" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="e8122587-b4fb-435f-b022-23d707e472d9" name="Default Changelist" comment="" />
-      <created>1601045057493</created>
+      <changelist id="0dc40b25-dab5-48a7-a903-d4a76bd80af7" name="Default Changelist" comment="" />
+      <created>1601060386013</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1601045057493</updated>
-      <workItem from="1601045058587" duration="2457000" />
+      <updated>1601060386013</updated>
+      <workItem from="1601060387931" duration="23628000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="WindowStateProjectService">
-    <state x="576" y="210" width="824" height="684" key="#PHP_CodeSniffer" timestamp="1601045353387">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="1992" y="280" key="#Inspections" timestamp="1601114425493">
+      <screen x="1366" y="0" width="1920" height="1200" />
     </state>
-    <state x="576" y="210" width="824" height="684" key="#PHP_CodeSniffer/67.27.1853.1053@67.27.1853.1053" timestamp="1601045353387" />
-    <state x="771" y="295" width="424" height="513" key="FileChooserDialogImpl" timestamp="1601045641508">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="1992" y="280" key="#Inspections/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601114425493" />
+    <state x="1946" y="257" key="#PHP_CodeSniffer" timestamp="1601061501936">
+      <screen x="1366" y="0" width="1920" height="1200" />
     </state>
-    <state x="771" y="295" width="424" height="513" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1601045641508" />
-    <state x="482" y="187" width="1191" height="730" key="SettingsEditor" timestamp="1601046073118">
-      <screen x="67" y="27" width="1853" height="1053" />
+    <state x="1946" y="257" key="#PHP_CodeSniffer/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601061501936" />
+    <state x="2146" y="341" key="FileChooserDialogImpl" timestamp="1601061532408">
+      <screen x="1366" y="0" width="1920" height="1200" />
     </state>
-    <state x="482" y="187" width="1191" height="730" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1601046073118" />
+    <state x="2146" y="341" key="FileChooserDialogImpl/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601061532408" />
+    <state x="2139" y="521" key="NewPhpFileDialog" timestamp="1601115950862">
+      <screen x="1366" y="0" width="1920" height="1200" />
+    </state>
+    <state x="2139" y="521" key="NewPhpFileDialog/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601115950862" />
+    <state x="1845" y="234" width="1359" height="728" key="SettingsEditor" timestamp="1601114898302">
+      <screen x="1366" y="0" width="1920" height="1200" />
+    </state>
+    <state x="1845" y="234" width="1359" height="728" key="SettingsEditor/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601114898301" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

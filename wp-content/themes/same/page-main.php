@@ -4,6 +4,7 @@
  *Template Name: Template for main page
  *
  *@package same
+ *
  */
 
 get_header();
@@ -14,14 +15,14 @@ get_header();
             <div id="top_slide" class="flexslider">
                 <ul class="slides">
                     <li>
-                        <img src="./wp-content/themes/same/assets/img/gfx/examples/top_slide1.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gfx/examples/top_slide1.jpg" alt="" />
                         <p class="flex-caption">
                             <strong>Lorem ipsum dolor sit amet</strong>
                             <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Velit. Pellentesque molestie quis, venenatis consequat. Morbi egestas, justo neque, fringilla fringilla orci. Suspendisse placerat scelerisque...</span>
                         </p>
                     </li>
                     <li>
-                        <img src="./wp-content/themes/same/assets/img/gfx/examples/top_slide2.jpg" alt="" />
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gfx/examples/top_slide2.jpg" alt="" />
                         <p class="flex-caption">
                             <strong>Sit amet</strong>
                             <span>Pellentesque molestie quis, venenatis consequat. Morbi egestas, justo neque.</span>
