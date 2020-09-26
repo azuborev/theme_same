@@ -61,7 +61,6 @@
 									'menu_id'        => 'top_menu',
 									'item_wrap'      => '<ul id="%1$s"><span>%3$s<span></ul>',
 									'walker'         => new Header_Menu_Walker(),
-
 								)
 							);
 							?>
