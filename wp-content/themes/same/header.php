@@ -43,14 +43,14 @@
             <!-- BEGIN TITLEBAR -->
             <header id="titlebar">
                 <div class="wrapper">
-<!--                    <a id="logo" href="#"><span></span></a>-->
                     <?php the_custom_logo(); ?>
                     <div id="titlebar_right">
                         <ul id="social_icons">
-                            <li><a href="#" class="linkedin"></a></li>
-                            <li><a href="#" class="facebook"></a></li>
-                            <li><a href="#" class="twitter"></a></li>
-                            <li><a href="#" class="rss"></a></li>
+							<?php
+							if(is_active_sidebar('same-header-icons')) {
+								dynamic_sidebar('same-header-icons');
+							}
+							?>
                         </ul>
                         <div class="clear"></div>
 						<?php

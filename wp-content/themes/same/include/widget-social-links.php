@@ -4,89 +4,88 @@
  * Class Same_Widget_Social_Links
  */
 class Same_Widget_Social_Links extends WP_Widget {
-	const IMG_URL = './assets/img/gfx/';
 	/**
 	 * Same_Widget_Social_Links constructor.
 	 */
 	public function __construct() {
-		parent::__construct(
-			__( 'same_widget_social_links', 'same' ),
-			__( 'Same - social links', 'same' ),
-			array(
-				'name'        => __( 'Same - social links', 'same' ),
-				'description' => __( 'render social links', 'same' ),
-			)
+		$args = array(
+			'name'        => __( 'Same - Social Links', 'same' ),
+			'description' => __( 'Render social links', 'same' ),
 		);
+		parent::__construct( 'same_widget_social_links', __( 'Same - Social Links', 'same' ), $args );
 	}
 
+	/**
+	 * Array with social links.
+	 *
+	 * @var string[][]
+	 */
 	private $socials = array(
-		'fb' => array(
-			'Facebook',
+		'fb'  => array(
+			'facebook',
 		),
-		'ln' => array(
-			'LinkedIn',
+		'ln'  => array(
+			'linkedin',
 		),
-		'tw' => array(
-			'Twitter',
+		'tw'  => array(
+			'twitter',
 		),
 		'rss' => array(
-			'RSS',
+			'rss',
 		),
 	);
 
-	public function form($instance) //то что в админке, инстенс - данные, которые записаны в форме
-	{
+	/**
+	 * Form backend for widget
+	 *
+	 * @param array $instance data about social network.
+	 * @return string|void
+	 */
+	public function form( $instance ) {
+		$link = ( ! empty( $instance['link'] ) ) ? $instance['link'] : '';
+		$name = ( ! empty( $instance['slug'] ) ) ? $instance['slug'] : '';
 		?>
 		<p>
-			<label for = "<?php echo $this->get_field_id('id-link') ?>">Ссылка на социальную сеть:</label>
-			<input
-				id="<?php echo $this->get_field_id('id-link') ?>"
-				type="text"
-				name="<?php echo $this->get_field_name('link')?>"
-				value="<?php echo $instance['link'] ?>"
-				class="widefat"
-			>
+			<label for="<?php echo $this->get_field_id( 'link' ); ?>"><?php _e( 'Link', 'same' ) ?></label>
+			<input class="widefat" id="<?php echo $this->get_field_id('link'); ?>" type="text"
+				   name="<?php echo $this->get_field_name('link'); ?>" value="<?php echo esc_attr( $link ); ?>">
 		</p>
 		<p>
-			<label for = "<?php echo $this->get_field_id('id-slug') ?>">Выберите социальную сеть:</label>
-			<select
-				id="<?php echo $this->get_field_id('id-slug') ?>"
-				name="<?php echo $this->get_field_name('slug')?>"
-				class="widefat"
-			>
+			<label for="<?php echo $this->get_field_id('slug'); ?>"><?php _e( 'Social network', 'same' ) ?></label>
+			<select class="widefat" name="<?php echo $this->get_field_name( 'slug' ); ?>" id="<?php echo $this->get_field_id('slug'); ?>">
 				<?php
 				foreach ($this->socials as $slug => $desc):
 					?>
-					<option value="<?php echo $slug; ?>" <?php selected( $instance['slug'], $slug, true ) ?>>
+					<option value="<?php echo $slug; ?>" <?php selected( $name, $slug, true ); ?>>
 						<?php echo $desc[0]; ?>
 					</option>
-				<?php endforeach; ?>
+				<?php endforeach;
+				?>
 			</select>
 		</p>
 		<?php
 	}
 
-	public function widget($args, $instance)  // то что на фронте
-	{
+	public function widget($args, $instance) {
 		$slug = $instance['slug'];
 		$link = $instance['link'];
-		$text = $this->socials[$slug][0];
-		$svg = $this->socials[$slug][1];
+		$title = $this->socials[$slug][0];
 		?>
-		<a
-			target="_blank"
-			href="<?php echo $link ?>"
-			class="widget-social-links <?php echo $slug ?>"
-		>
-			<span class="sr-only"> Мы в <?php echo $text ?>! </span>
-			<?php echo $svg; ?>
-		</a>
+		<li><a href="<?php echo $link ?>" class="<?php echo $title ?>" target="_blank"></a></li>
 		<?php
 
 	}
-
-	public  function update($new_instance, $old_instance) // при изменении данных
-	{
-		return $new_instance;
+	/**
+	 * Updata, save data widget.
+	 *
+	 * @param array $new_instance new data.
+	 * @param array $old_instance old data.
+	 * @return array $instance
+	 */
+	public function update( $new_instance, $old_instance ) {
+		$instance = array();
+		$instance['link'] = ( ! empty( $new_instance['link'] ) ) ? wp_strip_all_tags( $new_instance['link'] ) : '#';
+		$instance['slug'] = wp_strip_all_tags( $new_instance['slug'] );
+		return $instance;
 	}
 }

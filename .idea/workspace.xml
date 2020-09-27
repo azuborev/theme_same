@@ -2,10 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dc40b25-dab5-48a7-a903-d4a76bd80af7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/same/include/widget-social-links.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/same/include/widget-contacts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/same/include/widget-text.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/same/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/functions.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/same/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/include/widget-social-links.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/include/widget-social-links.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +51,7 @@
       <option name="presentableId" value="Default" />
       <updated>1601060386013</updated>
       <workItem from="1601060387931" duration="28756000" />
+      <workItem from="1601151821697" duration="48033000" />
     </task>
     <servers />
   </component>
@@ -65,14 +71,18 @@
       <screen x="1366" y="0" width="1920" height="1200" />
     </state>
     <state x="2146" y="341" key="FileChooserDialogImpl/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601061532408" />
-    <state x="2139" y="521" key="NewPhpFileDialog" timestamp="1601115950862">
+    <state x="2139" y="521" key="NewPhpFileDialog" timestamp="1601231501528">
       <screen x="1366" y="0" width="1920" height="1200" />
     </state>
-    <state x="2139" y="521" key="NewPhpFileDialog/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601115950862" />
+    <state x="2139" y="521" key="NewPhpFileDialog/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601231501528" />
     <state x="1845" y="234" width="1359" height="728" key="SettingsEditor" timestamp="1601114898302">
       <screen x="1366" y="0" width="1920" height="1200" />
     </state>
     <state x="1845" y="234" width="1359" height="728" key="SettingsEditor/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601114898301" />
+    <state x="2038" y="161" width="1085" height="873" key="find.popup" timestamp="1601207678392">
+      <screen x="1366" y="0" width="1920" height="1200" />
+    </state>
+    <state x="2038" y="161" width="1085" height="873" key="find.popup/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601207678392" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

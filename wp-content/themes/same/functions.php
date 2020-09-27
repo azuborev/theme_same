@@ -7,6 +7,10 @@
  * @package same
  */
 
+require_once __DIR__ . '/include/widget-social-links.php';
+require_once __DIR__ . '/include/widget-text.php';
+require_once __DIR__ . '/include/widget-contacts.php';
+
 if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
@@ -33,6 +37,7 @@ add_action( 'after_setup_theme', 'same_setup' );
  */
 function same_scripts() {
 	wp_enqueue_style( 'same-style', get_stylesheet_uri(), array(), _S_VERSION );
+	wp_enqueue_style( 'same-google-fonts', 'https://fonts.googleapis.com/css?family=Crete+Round', array(), _S_VERSION );
 	wp_enqueue_style( 'same-light_style', get_template_directory_uri() . '/assets/css/light.css', array(), _S_VERSION );
 	wp_style_add_data( 'same-light_style', 'title', __( 'light', 'same' ) );
 	wp_enqueue_style( 'same-dark_style', get_template_directory_uri() . '/assets/css/dark.css', array(), _S_VERSION );
@@ -51,20 +56,48 @@ function same_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'same_scripts' );
 /**
- * Register widget area.
+ * Register area for sidebar, widget.
  */
 function same_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar', 'same' ),
-			'id'            => 'sidebar-1',
-			'description'   => esc_html__( 'Add widgets here.', 'same' ),
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'name'          => esc_html__( 'Sidebar: social links', 'same' ),
+			'id'            => 'same-header-icons',
+			'before_widget' => null,
+			'after_widget'  => null,
 		)
 	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar in footer - after columns', 'same' ),
+			'id'            => 'same-footer-after-col',
+			'before_widget' => '<p class="copyrights">',
+			'after_widget'  => '</p>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar in footer - 1', 'same' ),
+			'id'            => 'same-footer-col-1',
+			'before_widget' => null,
+			'after_widget'  => null,
+			'before_title'  => '<h3>',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Sidebar in footer - 4', 'same' ),
+			'id'            => 'same-footer-col-4',
+			'before_widget' => null,
+			'after_widget'  => null,
+			'before_title'  => '<h3>',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_widget( 'same_widget_social_links' );
+	register_widget( 'same_widget_text' );
+	register_widget( 'same_widget_contacts' );
 }
 add_action( 'widgets_init', 'same_widgets_init' );
 /**

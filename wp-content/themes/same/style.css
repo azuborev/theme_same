@@ -1,4 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Crete+Round);
 
 a {
     text-decoration: none;
@@ -980,7 +979,7 @@ input, select, textarea {
     float: left;
     width: 185px;
     height: 12px;
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.6875em;
     border: 0;
     background: 0;
@@ -997,7 +996,7 @@ input, select, textarea {
     float: left;
     width: 675px;
     height: 172px;
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.6875em;
     border: 0;
     background: 0;

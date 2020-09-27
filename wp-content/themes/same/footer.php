@@ -2,10 +2,6 @@
 /**
  * The template for displaying the footer
  *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
  * @package same
  */
 
@@ -16,16 +12,18 @@
     <section id="above_footer">
         <div class="wrapper above_footer_boxes page_text">
             <div class="box first">
-                <h3>About Us</h3>
-                <p>Suspendisse in faucibus lorem, pretium quis, <a href="#">lacinia aliquet</a> enim sapien et lacus tellus quis consectetuer nisl.</p>
-                <p>Vestibulum tempus. Pellentesque sagittis, nunc eu odio. Suspendisse turpis at ipsum. Pellentesque placerat. Vivamus vulputate luctus.</p>
+				<?php
+				if(is_active_sidebar('same-footer-col-1')) {
+					dynamic_sidebar('same-footer-col-1');
+				}
+				?>
             </div>
 
             <div class="box second">
                 <h3>Recent Posts</h3>
                 <ul class="recent_posts">
                     <li class="item">
-                        <a class="thumbnail" href="#"><img alt="" src="./wp-content/themes/same/assets/img/gfx/examples/above_footer_recent_posts1.jpg"></a>
+                        <a class="thumbnail" href="#"><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/gfx/examples/above_footer_recent_posts1.jpg"></a>
                         <div class="text">
                             <h4 class="title"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></h4>
                             <p class="data">
@@ -34,7 +32,7 @@
                         </div>
                     </li>
                     <li class="item">
-                        <a class="thumbnail" href="#"><img alt="" src="./wp-content/themes/same/assets/img/gfx/examples/above_footer_recent_posts2.jpg"></a>
+                        <a class="thumbnail" href="#"><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/gfx/examples/above_footer_recent_posts2.jpg"></a>
                         <div class="text">
                             <h4 class="title"><a href="#">Cras vitae est lacus vehicula enim ac turpis at tellus.</a></h4>
                             <p class="data">
@@ -43,7 +41,7 @@
                         </div>
                     </li>
                     <li class="item">
-                        <a class="thumbnail" href="#"><img alt="" src="./wp-content/themes/same/assets/img/gfx/examples/above_footer_recent_posts3.jpg"></a>
+                        <a class="thumbnail" href="#"><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/gfx/examples/above_footer_recent_posts3.jpg"></a>
                         <div class="text">
                             <h4 class="title"><a href="#">Quisque quis nibh.</a></h4>
                             <p class="data">
@@ -72,10 +70,16 @@
 
             <div class="box fourth">
                 <h3>Contact Us</h3>
+
                 <ul class="list_contact page_text">
-                    <li class="phone">+41 987 654 321<br />(011) 123 32 23</li>
-                    <li class="email"><a href="#">contact@thesame.com</a></li>
-                    <li class="address">King Street 4/30<br />12-345 City</li>
+					<?php
+					if(is_active_sidebar('same-footer-col-4')) {
+						dynamic_sidebar('same-footer-col-4');
+					}
+					?>
+<!--                    <li class="phone">+41 987 654 321<br />(011) 123 32 23</li>-->
+<!--                    <li class="email"><a href="mailto:contact@thesame.com">contact@thesame.com</a></li>-->
+<!--                    <li class="address">King Street 4/30<br />12-345 City</li>-->
                 </ul>
             </div>
         </div>
@@ -85,7 +89,11 @@
     <!-- BEGIN FOOTER -->
     <footer id="footer">
         <div class="wrapper">
-            <p class="copyrights">Copyright &copy; 2012 by TheSame. All rights reserved.</p>
+				<?php
+				if(is_active_sidebar('same-footer-after-col')) {
+					dynamic_sidebar('same-footer-after-col');
+				}
+				?>
             <a href="#page" class="up">
                 <span class="arrow"></span>
                 <span class="text">top</span>
@@ -98,25 +106,3 @@
 <?php wp_footer(); ?>
 </body>
 </html>
-
-<!--	<footer id="colophon" class="site-footer">-->
-<!--		<div class="site-info">-->
-<!--			<a href="--><?php //echo esc_url( __( 'https://wordpress.org/', 'same' ) ); ?><!--">-->
-<!--				--><?php
-//				/* translators: %s: CMS name, i.e. WordPress. */
-//				printf( esc_html__( 'Proudly powered by %s', 'same' ), 'WordPress' );
-//				?>
-<!--			</a>-->
-<!--			<span class="sep"> | </span>-->
-<!--				--><?php
-//				/* translators: 1: Theme name, 2: Theme author. */
-//				printf( esc_html__( 'Theme: %1$s by %2$s.', 'same' ), 'same', '<a href="http://underscores.me/">Underscores.me</a>' );
-//				?>
-<!--		</div><!-- .site-info -->-->
-<!--	</footer><!-- #colophon -->-->
-<!--</div><!-- #page -->-->
-<!---->
-<?php //wp_footer(); ?>
-<!---->
-<!--</body>-->
-<!--</html>-->
