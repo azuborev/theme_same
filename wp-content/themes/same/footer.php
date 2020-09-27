@@ -70,16 +70,12 @@
 
             <div class="box fourth">
                 <h3>Contact Us</h3>
-
                 <ul class="list_contact page_text">
 					<?php
 					if(is_active_sidebar('same-footer-col-4')) {
 						dynamic_sidebar('same-footer-col-4');
 					}
 					?>
-<!--                    <li class="phone">+41 987 654 321<br />(011) 123 32 23</li>-->
-<!--                    <li class="email"><a href="mailto:contact@thesame.com">contact@thesame.com</a></li>-->
-<!--                    <li class="address">King Street 4/30<br />12-345 City</li>-->
                 </ul>
             </div>
         </div>
