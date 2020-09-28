@@ -7,9 +7,13 @@
  * @package same
  */
 
-require_once __DIR__ . '/include/widget-social-links.php';
-require_once __DIR__ . '/include/widget-text.php';
-require_once __DIR__ . '/include/widget-contacts.php';
+require_once __DIR__ . '/include/widgets/widget-social-links.php';
+require_once __DIR__ . '/include/widgets/widget-text.php';
+require_once __DIR__ . '/include/widgets/widget-contacts.php';
+require_once __DIR__ . '/include/widgets/widget-category-list.php';
+
+require_once __DIR__ . '/include/classes/class-header-menu-walker.php';
+require_once __DIR__ . '/include/classes/class-walker-category-custom.php';
 
 if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
@@ -87,6 +91,16 @@ function same_widgets_init() {
 	);
 	register_sidebar(
 		array(
+			'name'          => esc_html__( 'Sidebar in footer - 3', 'same' ),
+			'id'            => 'same-footer-col-3',
+			'before_widget' => '<ul class="menu categories page_text">',
+			'after_widget'  => '</ul>',
+			'before_title'  => '<h3>',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
 			'name'          => esc_html__( 'Sidebar in footer - 4', 'same' ),
 			'id'            => 'same-footer-col-4',
 			'before_widget' => null,
@@ -98,6 +112,7 @@ function same_widgets_init() {
 	register_widget( 'same_widget_social_links' );
 	register_widget( 'same_widget_text' );
 	register_widget( 'same_widget_contacts' );
+	register_widget( 'same_widget_category_list' );
 }
 add_action( 'widgets_init', 'same_widgets_init' );
 /**
@@ -111,32 +126,3 @@ function filter_nav_menu_item_title( $title ) {
 	return '<span>' . $title . '</span>';
 }
 add_filter( 'nav_menu_item_title', 'filter_nav_menu_item_title' );
-
-/**
- * Class Header_Menu_Walker
- */
-class Header_Menu_Walker extends Walker_Nav_Menu {
-	/**
-	 * Starts the list before the elements are added.
-	 *
-	 * @param string $output used to append additional content.
-	 * @param int    $depth - depth of the item.
-	 * @param array  $args - an array of additional arguments.
-	 */
-	public function start_lvl( &$output, $depth = 0, $args = array() ) {
-		$indent = str_repeat( "\t", $depth );
-		$output .= "\n $indent<div class = 'submenu' ><ul> \n";
-	}
-
-	/**
-	 * Ends the list of after the elements are added.
-	 *
-	 * @param string $output used to append additional content.
-	 * @param int    $depth - depth of the item.
-	 * @param array  $args - an array of additional arguments.
-	 */
-	public function end_lvl( &$output, $depth = 0, $args = array() ) {
-		$indent = str_repeat( "\t", $depth );
-		$output .= "$indent</ul></div>\n";
-	}
-}

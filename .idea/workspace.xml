@@ -1,16 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0dc40b25-dab5-48a7-a903-d4a76bd80af7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/same/include/widget-contacts.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/same/include/widget-text.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/same/include/classes/class-header-menu-walker.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/same/include/classes/class-walker-category-custom.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/same/include/widgets/widget-category-list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/same.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/same.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-config.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-config.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/logo11.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/light/logo11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/img/gfx/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/same/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/same/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/header.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/include/widget-social-links.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/include/widget-social-links.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/include/widget-contacts.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/include/widgets/widget-contacts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/include/widget-social-links.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/include/widgets/widget-social-links.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/include/widget-text.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/include/widgets/widget-text.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo-2-150x18.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo-2-150x18.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo-2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo-3-150x18.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo-3-150x18.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo-3.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo-3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo1-1024x248.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo1-1024x248.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo1-150x150.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo1-150x150.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo1-1536x372.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo1-1536x372.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo1-2048x496.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo1-2048x496.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo1-300x73.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo1-300x73.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo1-768x186.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo1-768x186.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo1.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo11-150x129.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo11-150x129.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo11-300x73.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo11-300x73.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo11.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo11.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo111.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo111.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo112-150x65.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo112-150x65.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo112.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo112.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo113-150x50.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo113-150x50.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo113.png" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/logo113.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +76,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/wpcs" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.HTML" />
+    <property name="last_opened_file_path" value="/vendor/composer" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/wp-content/themes/same/include/widgets" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,38 +100,67 @@
       <option name="presentableId" value="Default" />
       <updated>1601060386013</updated>
       <workItem from="1601060387931" duration="28756000" />
-      <workItem from="1601151821697" duration="48033000" />
+      <workItem from="1601151821697" duration="48107000" />
+      <workItem from="1601275928853" duration="615000" />
+      <workItem from="1601276557024" duration="15525000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="1992" y="280" key="#Inspections" timestamp="1601114425493">
       <screen x="1366" y="0" width="1920" height="1200" />
     </state>
     <state x="1992" y="280" key="#Inspections/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601114425493" />
-    <state x="1946" y="257" key="#PHP_CodeSniffer" timestamp="1601061501936">
-      <screen x="1366" y="0" width="1920" height="1200" />
+    <state x="627" y="253" width="824" height="684" key="#PHP_CodeSniffer" timestamp="1601276299153">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1946" y="257" key="#PHP_CodeSniffer/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601061501936" />
-    <state x="2146" y="341" key="FileChooserDialogImpl" timestamp="1601061532408">
-      <screen x="1366" y="0" width="1920" height="1200" />
+    <state x="627" y="253" width="824" height="684" key="#PHP_CodeSniffer/67.27.1853.1053@67.27.1853.1053" timestamp="1601276299153" />
+    <state x="1081" y="511" width="187" height="172" key="#PHP_CodeSniffer_Ignored_Files" timestamp="1601275864358">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="1081" y="511" width="187" height="172" key="#PHP_CodeSniffer_Ignored_Files/67.27.1853.1053@67.27.1853.1053" timestamp="1601275864358" />
+    <state x="801" y="479" width="375" height="147" key="#WordPress" timestamp="1601275936078">
+      <screen x="67" y="27" width="1853" height="1053" />
+    </state>
+    <state x="801" y="479" width="375" height="147" key="#WordPress/67.27.1853.1053@67.27.1853.1053" timestamp="1601275936078" />
+    <state x="820" y="326" width="424" height="513" key="FileChooserDialogImpl" timestamp="1601276328483">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="2146" y="341" key="FileChooserDialogImpl/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601061532408" />
-    <state x="2139" y="521" key="NewPhpFileDialog" timestamp="1601231501528">
-      <screen x="1366" y="0" width="1920" height="1200" />
+    <state x="820" y="326" width="424" height="513" key="FileChooserDialogImpl/67.27.1853.1053@67.27.1853.1053" timestamp="1601276328483" />
+    <state x="813" y="484" width="399" height="149" key="NewPhpFileDialog" timestamp="1601289709851">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="2139" y="521" key="NewPhpFileDialog/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601231501528" />
-    <state x="1845" y="234" width="1359" height="728" key="SettingsEditor" timestamp="1601114898302">
-      <screen x="1366" y="0" width="1920" height="1200" />
+    <state x="813" y="484" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1601289709851" />
+    <state x="529" y="232" width="1302" height="730" key="SettingsEditor" timestamp="1601276575984">
+      <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1845" y="234" width="1359" height="728" key="SettingsEditor/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601114898301" />
+    <state x="529" y="232" width="1302" height="730" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1601276575984" />
     <state x="2038" y="161" width="1085" height="873" key="find.popup" timestamp="1601207678392">
       <screen x="1366" y="0" width="1920" height="1200" />
     </state>
     <state x="2038" y="161" width="1085" height="873" key="find.popup/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601207678392" />
+  </component>
+  <component name="WordPressConfiguration" enabled="true">
+    <wordpressPath>$PROJECT_DIR$</wordpressPath>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

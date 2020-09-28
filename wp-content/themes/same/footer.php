@@ -53,19 +53,11 @@
             </div>
 
             <div class="box third">
-                <h3>Categories</h3>
-                <ul class="menu categories page_text">
-                    <li><a href="#">Webdesign (8)</a></li>
-                    <li>
-                        <a href="#">Branding (12)</a>
-                        <ul>
-                            <li><a href="#">Photography (45)</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Photomanipulation (5)</a></li>
-                    <li><a href="#">3D (1)</a></li>
-                    <li><a href="#">Others (7)</a></li>
-                </ul>
+	                <?php
+	                if(is_active_sidebar('same-footer-col-3')) {
+		                dynamic_sidebar('same-footer-col-3');
+	                }
+	                ?>
             </div>
 
             <div class="box fourth">
