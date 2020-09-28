@@ -35,6 +35,7 @@ class Same_Widget_Category_List extends WP_Widget {
 			<input class="widefat" id="<?php echo $this->get_field_id('id-title'); ?>" type="text"
 			       name="<?php echo $this->get_field_name('title'); ?>" value="<?php echo esc_attr( $title ); ?>">
 		</p>
+        <p>
 		<select class="widefat" name="<?php echo $this->get_field_name( 'taxonomy' ); ?>" id="<?php echo $this->get_field_id('id-taxonomy'); ?>">
 			<?php
 			foreach ($taxonomies as $tax):

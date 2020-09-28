@@ -11,6 +11,7 @@ require_once __DIR__ . '/include/widgets/widget-social-links.php';
 require_once __DIR__ . '/include/widgets/widget-text.php';
 require_once __DIR__ . '/include/widgets/widget-contacts.php';
 require_once __DIR__ . '/include/widgets/widget-category-list.php';
+require_once __DIR__ . '/include/widgets/widget-recent-posts.php';
 
 require_once __DIR__ . '/include/classes/class-header-menu-walker.php';
 require_once __DIR__ . '/include/classes/class-walker-category-custom.php';
@@ -91,6 +92,16 @@ function same_widgets_init() {
 	);
 	register_sidebar(
 		array(
+			'name'          => esc_html__( 'Sidebar in footer - 2', 'same' ),
+			'id'            => 'same-footer-col-2',
+			'before_widget' => '<ul class="recent_posts">',
+			'after_widget'  => '</ul>',
+			'before_title'  => '<h3>',
+			'after_title'   => '</h3>',
+		)
+	);
+	register_sidebar(
+		array(
 			'name'          => esc_html__( 'Sidebar in footer - 3', 'same' ),
 			'id'            => 'same-footer-col-3',
 			'before_widget' => '<ul class="menu categories page_text">',
@@ -113,6 +124,7 @@ function same_widgets_init() {
 	register_widget( 'same_widget_text' );
 	register_widget( 'same_widget_contacts' );
 	register_widget( 'same_widget_category_list' );
+	register_widget( 'same_widget_recent_posts' );
 }
 add_action( 'widgets_init', 'same_widgets_init' );
 /**

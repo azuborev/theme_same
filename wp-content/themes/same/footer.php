@@ -20,36 +20,11 @@
             </div>
 
             <div class="box second">
-                <h3>Recent Posts</h3>
-                <ul class="recent_posts">
-                    <li class="item">
-                        <a class="thumbnail" href="#"><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/gfx/examples/above_footer_recent_posts1.jpg"></a>
-                        <div class="text">
-                            <h4 class="title"><a href="#">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</a></h4>
-                            <p class="data">
-                                <span class="date">21/10/2011</span>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <a class="thumbnail" href="#"><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/gfx/examples/above_footer_recent_posts2.jpg"></a>
-                        <div class="text">
-                            <h4 class="title"><a href="#">Cras vitae est lacus vehicula enim ac turpis at tellus.</a></h4>
-                            <p class="data">
-                                <span class="date">21/10/2011</span>
-                            </p>
-                        </div>
-                    </li>
-                    <li class="item">
-                        <a class="thumbnail" href="#"><img alt="" src="<?php echo get_template_directory_uri(); ?>/assets/img/gfx/examples/above_footer_recent_posts3.jpg"></a>
-                        <div class="text">
-                            <h4 class="title"><a href="#">Quisque quis nibh.</a></h4>
-                            <p class="data">
-                                <span class="date">21/10/2011</span>
-                            </p>
-                        </div>
-                    </li>
-                </ul>
+	            <?php
+	            if(is_active_sidebar('same-footer-col-2')) {
+		            dynamic_sidebar('same-footer-col-2');
+	            }
+	            ?>
             </div>
 
             <div class="box third">
