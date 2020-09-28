@@ -66,6 +66,17 @@ add_action( 'wp_enqueue_scripts', 'same_scripts' );
 function same_widgets_init() {
 	register_sidebar(
 		array(
+			'name'          => esc_html__( 'Sidebar: aside', 'same' ),
+			'id'            => 'sidebar-aside-1',
+			'description'   => esc_html__( 'Add widgets here.', 'same' ),
+			'before_widget' => '<div class="padd16bot">',
+			'after_widget'  => '</div>',
+			'before_title'  => '<h2 class="widget-title">',
+			'after_title'   => '</h2>',
+		)
+	);
+	register_sidebar(
+		array(
 			'name'          => esc_html__( 'Sidebar: social links', 'same' ),
 			'id'            => 'same-header-icons',
 			'before_widget' => null,

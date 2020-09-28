@@ -13,84 +13,76 @@
  */
 
 get_header();
-if ( is_home() ) :
-	?>
-	<main id="primary" class="site-main">
+?>
+    <!-- BEGIN CONTENT -->
+    <section id="content">
+        <div class="wrapper page_text">
+            <h1 class="page_title">Blog</h1>
+            <div class="breadcrumbs">
+                <div class="inside">
+                    <a href="#" class="first"><span>The Same</span></a>
+                    <a href="#" class="last"><span>Blog</span></a>
+                </div>
+            </div>
 
-		<?php
-		if ( have_posts() ) :
+            <div class="columns">
+                <div class="column column75">
+                    <article class="article">
+                        <div class="article_image nomargin">
+                            <div class="inside">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gfx/examples/content_image689x214.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="article_details">
+                            <ul class="article_author_date">
+                                <li><em>Add:</em> 23.02.2012</li>
+                                <li><em>Author: </em> <a href="#">Admin</a></li>
+                            </ul>
+                            <p class="article_comments"><em>Comment:</em> 142</p>
+                        </div>
 
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
+                        <h1>Example blog post</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Elit. Sed malesuada tristique, urna sem rutrum ut, nonummy nunc vel wisi. Phasellus lorem nec leo sodales in, odio. Mauris aliquet lorem. Integer vestibulum ligula. Nunc elementum. Mauris ullamcorper nec, scelerisque rhoncus wisi. Curabitur vel nonummy enim enim arcu sed tortor.Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet. Quisque aliquam. Donec faucibus. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+                        <q>Donec lectus blandit justo, eget elit porttitor egestas. Cras enim vulputate vehicula. Etiam ornare a, aliquet congue sem.</q>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque,
+                            id pulvinar odio lorem non turpis. Nullam sit amet enim. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+                            Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet.</p>
 
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
+                        <a class="button button_small button_orange float_left"><span class="inside">read more</span></a>
+                    </article>
 
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
+                    <article class="article">
+                        <div class="article_image nomargin">
+                            <div class="inside">
+                                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gfx/examples/content_image689x214_2.jpg" alt="" />
+                            </div>
+                        </div>
+                        <div class="article_details">
+                            <ul class="article_author_date">
+                                <li><em>Add:</em> 23.02.2012</li>
+                                <li><em>Author: </em> <a href="#">Admin</a></li>
+                            </ul>
+                            <p class="article_comments"><em>Comment:</em> 142</p>
+                        </div>
 
-			endwhile;
+                        <h1>Example blog post</h1>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Elit. Sed malesuada tristique, urna sem rutrum ut, nonummy nunc vel wisi. Phasellus lorem nec leo sodales in, odio. Mauris aliquet lorem. Integer vestibulum ligula. Nunc elementum. Mauris ullamcorper nec, scelerisque rhoncus wisi. Curabitur vel nonummy enim enim arcu sed tortor.Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet. Quisque aliquam. Donec faucibus. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus.</p>
+                        <q>Donec lectus blandit justo, eget elit porttitor egestas. Cras enim vulputate vehicula. Etiam ornare a, aliquet congue sem.</q>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque,
+                            id pulvinar odio lorem non turpis. Nullam sit amet enim. Donec sed tellus eget sapien fringilla nonummy. Mauris a ante.
+                            Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Lorem ipsum dolor sit amet.</p>
 
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-	</main><!-- #main -->
-	<?php
-	else :
-		?>
-		<main id="primary" class="site-main">
-
-		<?php
-		if ( have_posts() ) :
-
-			if ( is_home() && ! is_front_page() ) :
-				?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-				<?php
-			endif;
-
-			/* Start the Loop */
-			while ( have_posts() ) :
-				the_post();
-
-				/*
-				 * Include the Post-Type-specific template for the content.
-				 * If you want to override this in a child theme, then include a file
-				 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-				 */
-				get_template_part( 'template-parts/content', get_post_type() );
-
-			endwhile;
-
-			the_posts_navigation();
-
-		else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif;
-		?>
-
-	</main><!-- #main -->
-		<?php
-endif;
-	get_sidebar();
-	get_footer();
+                        <a class="button button_small button_orange float_left"><span class="inside">read more</span></a>
+                    </article>
+                </div>
+                <?php
+                    get_sidebar();
+                ?>
+            </div>
+        </div>
+    </section>
+    <!-- END CONTENT -->
+    </div>
+    </div>
+<?php
+get_footer();

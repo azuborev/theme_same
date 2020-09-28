@@ -11,11 +11,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dc40b25-dab5-48a7-a903-d4a76bd80af7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/same/include/widgets/widget-recent-posts.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/same/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/functions.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/include/widgets/widget-category-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/include/widgets/widget-category-list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/sidebar.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +69,7 @@
       <workItem from="1601060387931" duration="28756000" />
       <workItem from="1601151821697" duration="48107000" />
       <workItem from="1601275928853" duration="615000" />
-      <workItem from="1601276557024" duration="22912000" />
+      <workItem from="1601276557024" duration="25327000" />
     </task>
     <servers />
   </component>
