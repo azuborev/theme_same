@@ -13,14 +13,39 @@ get_header();
     <section id="top">
         <div class="wrapper">
             <div id="top_slide" class="flexslider">
+                <?php
+                $sliders = get_posts( array(
+	                'numberposts'      => 5,
+	                'meta_key'         => 'number_of_the_show',
+	                'orderby'          => 'meta_value_num',
+	                'order'            => 'ASC',
+	                'post_type'        => 'sliders',
+	                'location'         => 'header-of-main-page',
+	                'post_status'      => 'publish',
+	                'suppress_filters' => true,
+                 ));
+                ?>
                 <ul class="slides">
-                    <li>
+                    <?php
+                    foreach( $sliders as $post ){
+	                    setup_postdata($post);
+                        var_dump(get_field('description_text', $post->ID));?>
+	                    <li>
+
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gfx/examples/top_slide1.jpg" alt="" />
                         <p class="flex-caption">
                             <strong>Lorem ipsum dolor sit amet</strong>
                             <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Velit. Pellentesque molestie quis, venenatis consequat. Morbi egestas, justo neque, fringilla fringilla orci. Suspendisse placerat scelerisque...</span>
                         </p>
                     </li>
+                        echo '<ul>'.$slider->post_title.'</ul>';
+                    <?php
+                    }
+
+                    wp_reset_postdata();
+                    ?>
+
+
                     <li>
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gfx/examples/top_slide2.jpg" alt="" />
                         <p class="flex-caption">
