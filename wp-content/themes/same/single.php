@@ -9,7 +9,7 @@
 
 get_header();
 ?>
-
+<?php get_template_part('breadcrumbs'); ?>
 	<main id="primary" class="site-main">
 
 		<?php

@@ -61,12 +61,7 @@ class Same_Widget_Category_List extends WP_Widget {
 			'hide_empty'         => 0,
 			'use_desc_for_title' => 1,
 			'child_of'           => 0,
-			'feed'               => '',
-			'feed_type'          => '',
-			'feed_image'         => '',
-			'exclude'            => '',
-			'exclude_tree'       => '',
-			'include'            => '',
+
 			'hierarchical'       => true,
 			'title_li'           => false,
 			'number'             => NULL,
@@ -84,9 +79,9 @@ class Same_Widget_Category_List extends WP_Widget {
 		if ( ! empty( $title ) ) {
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
-		echo $args['before_widget'];
+		echo '<ul class="menu categories page_text">';
 		echo wp_list_categories($query_args );
-		echo $args['after_widget'];
+		echo '</ul>';
 	}
 	/**
 	 * Update, save data widget.

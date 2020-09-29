@@ -11,11 +11,60 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dc40b25-dab5-48a7-a903-d4a76bd80af7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/bcn_gutenberg_block.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/breadcrumb-navxt.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/class.bcn_admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/class.bcn_breadcrumb.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/class.bcn_breadcrumb_trail.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/class.bcn_network_admin.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/class.bcn_rest_controller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/class.bcn_widget.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/includes/block_direct_access.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/includes/class.mtekk_adminkit.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/includes/class.mtekk_adminkit_message.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/includes/class.mtekk_adminkit_uninstaller.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/includes/mtekk_adminkit_engroups.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/includes/mtekk_adminkit_engroups.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/includes/mtekk_adminkit_messages.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/includes/mtekk_adminkit_messages.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/includes/mtekk_adminkit_tabs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/includes/mtekk_adminkit_tabs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/includes/mtekk_adminkit_tabs.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/includes/mtekk_adminkit_tabs.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/includes/multibyte_supplicant.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/languages/breadcrumb-navxt.pot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/plugins/breadcrumb-navxt/uninstall.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/same/breadcrumbs.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214-150x150.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214-300x93.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214_2-150x150.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214_2-300x93.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214_2.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/404.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/404.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/archive.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/same/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/inc/custom-header.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/inc/customizer.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/inc/jetpack.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/inc/template-functions.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/inc/template-tags.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/include/classes/class-header-menu-walker.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/include/classes/class-header-menu-walker.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/include/classes/class-walker-category-custom.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/include/classes/class-walker-category-custom.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/include/widgets/widget-category-list.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/include/widgets/widget-category-list.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/include/widgets/widget-recent-posts.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/include/widgets/widget-recent-posts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/include/widgets/widget-text.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/include/widgets/widget-text.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/same/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/same/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/search.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/same/sidebar.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/sidebar.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/single.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/single.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/above_footer_recent_posts1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/above_footer_recent_posts1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/above_footer_recent_posts2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/above_footer_recent_posts2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/above_footer_recent_posts3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/above_footer_recent_posts3.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,11 +85,15 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP 7.2" />
   <component name="ProjectId" id="1i11fGNiyB8FSQvM9nBW6VBMORR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="/vendor/composer" />
@@ -50,7 +103,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -69,7 +122,9 @@
       <workItem from="1601060387931" duration="28756000" />
       <workItem from="1601151821697" duration="48107000" />
       <workItem from="1601275928853" duration="615000" />
-      <workItem from="1601276557024" duration="25327000" />
+      <workItem from="1601276557024" duration="26128000" />
+      <workItem from="1601361125008" duration="199000" />
+      <workItem from="1601361554362" duration="16489000" />
     </task>
     <servers />
   </component>
@@ -87,6 +142,9 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1992" y="280" key="#Inspections" timestamp="1601114425493">
@@ -116,11 +174,11 @@
     </state>
     <state x="2139" y="521" key="NewPhpFileDialog/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601231501528" />
     <state x="920" y="553" width="399" height="149" key="NewPhpFileDialog/67.27.1853.1053@67.27.1853.1053" timestamp="1601297325683" />
-    <state x="529" y="232" width="1302" height="730" key="SettingsEditor" timestamp="1601276575984">
+    <state x="314" y="76" width="1302" height="730" key="SettingsEditor" timestamp="1601361629768">
       <screen x="67" y="27" width="1853" height="1053" />
     </state>
     <state x="1845" y="234" width="1359" height="728" key="SettingsEditor/1366.0.1920.1200/65.24.1301.744@1366.0.1920.1200" timestamp="1601114898301" />
-    <state x="529" y="232" width="1302" height="730" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1601276575984" />
+    <state x="314" y="76" width="1302" height="730" key="SettingsEditor/67.27.1853.1053@67.27.1853.1053" timestamp="1601361629768" />
     <state x="2038" y="161" width="1085" height="873" key="find.popup" timestamp="1601207678392">
       <screen x="1366" y="0" width="1920" height="1200" />
     </state>

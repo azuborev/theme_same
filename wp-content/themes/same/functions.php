@@ -67,12 +67,12 @@ function same_widgets_init() {
 	register_sidebar(
 		array(
 			'name'          => esc_html__( 'Sidebar: aside', 'same' ),
-			'id'            => 'sidebar-aside-1',
+			'id'            => 'same-sidebar-aside',
 			'description'   => esc_html__( 'Add widgets here.', 'same' ),
-			'before_widget' => '<div class="padd16bot">',
+			'before_widget' =>  '<div class="padd16bot">',
 			'after_widget'  => '</div>',
-			'before_title'  => '<h2 class="widget-title">',
-			'after_title'   => '</h2>',
+			'before_title'  => '<h1 class="widget-title">',
+			'after_title'   => '</h1>',
 		)
 	);
 	register_sidebar(
@@ -87,8 +87,8 @@ function same_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Sidebar in footer - after columns', 'same' ),
 			'id'            => 'same-footer-after-col',
-			'before_widget' => '<p class="copyrights">',
-			'after_widget'  => '</p>',
+			'before_widget' => null,
+			'after_widget'  => null,
 		)
 	);
 	register_sidebar(
@@ -105,8 +105,8 @@ function same_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Sidebar in footer - 2', 'same' ),
 			'id'            => 'same-footer-col-2',
-			'before_widget' => '<ul class="recent_posts">',
-			'after_widget'  => '</ul>',
+			'before_widget' => null,
+			'after_widget'  => null,
 			'before_title'  => '<h3>',
 			'after_title'   => '</h3>',
 		)
@@ -115,8 +115,8 @@ function same_widgets_init() {
 		array(
 			'name'          => esc_html__( 'Sidebar in footer - 3', 'same' ),
 			'id'            => 'same-footer-col-3',
-			'before_widget' => '<ul class="menu categories page_text">',
-			'after_widget'  => '</ul>',
+			'before_widget' => null,
+			'after_widget'  => null,
 			'before_title'  => '<h3>',
 			'after_title'   => '</h3>',
 		)

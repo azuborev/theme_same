@@ -6,9 +6,7 @@
  */
 
 ?>
-
 <div id="page_bottom">
-    <!-- BEGIN ABOVE_FOOTER -->
     <section id="above_footer">
         <div class="wrapper above_footer_boxes page_text">
             <div class="box first">
@@ -47,23 +45,21 @@
             </div>
         </div>
     </section>
-    <!-- END ABOVE_FOOTER -->
-
-    <!-- BEGIN FOOTER -->
     <footer id="footer">
         <div class="wrapper">
+            <p class="copyrights">
 				<?php
 				if(is_active_sidebar('same-footer-after-col')) {
 					dynamic_sidebar('same-footer-after-col');
 				}
 				?>
+            </p>
             <a href="#page" class="up">
                 <span class="arrow"></span>
                 <span class="text">top</span>
             </a>
         </div>
     </footer>
-    <!-- END FOOTER -->
 </div>
 </div>
 <?php wp_footer(); ?>

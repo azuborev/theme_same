@@ -78,7 +78,9 @@ class Same_Widget_Recent_Posts extends WP_Widget {
 		if ( ! empty( $title ) ) {
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
-		echo $args['before_widget'];
+		?>
+		<ul class="recent_posts">
+        <?php
 		foreach( $posts as $post ){
 			?>
 			<li class="item">
@@ -86,12 +88,15 @@ class Same_Widget_Recent_Posts extends WP_Widget {
 			<div class="text">
 				<h4 class="title"><a href="<?php the_permalink($post->ID); ?>"><?php echo $post->post_title; ?></a></h4>
 				<p class="data">
-					<span class="date"><?php echo date('n/j/Y', strtotime($post->post_date)); ?></span>
+					<span class="date"><?php echo date('j/n/Y', strtotime($post->post_date)); ?></span>
 				</p>
 			</div>
+            </li>
 			<?php
 		}
-		echo $args['after_widget'];
+		?>
+        </ul>
+        <?php
 	}
 	/**
 	 * Update, save data widget.

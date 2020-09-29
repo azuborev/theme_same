@@ -49,9 +49,7 @@ class Same_Widget_Text extends WP_Widget {
 		if ( ! empty( $title ) ) {
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
-		echo $args['before_widget'];
 		echo apply_filters('same_widget_text', $instance['text']);
-		echo $args['after_widget'];
 	}
 	/**
 	 * Updata, save data widget.

@@ -11,6 +11,7 @@ get_header();
 		<section id="content">
 			<header class="page-header">
 				<div class="wrapper page_text">
+					<?php get_template_part('breadcrumbs'); ?>
 					<h1 class="page-title"><?php esc_html_e( '404 Oops! That page can&rsquo;t be found.', 'same' ); ?></h1>
 				</div>
 			</header>
