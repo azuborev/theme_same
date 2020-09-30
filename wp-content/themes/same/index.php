@@ -42,7 +42,8 @@ get_header();
                                  <p class="article_comments"><em><?php _e('Comment: ', 'same'); ?></em><?php comments_number('0', '1', '%'); ?></p>
                              </div>
                              <h1><?php the_title() ?></h1>
-			                 <?php echo preg_replace('/<blockquote(.*)blockquote>/', '<q>'.get_the_excerpt().'</q>', get_the_content('') ) ?>
+                             <?php the_content('') ?>
+<!--			                 --><?php //echo preg_replace('/<blockquote(.*)blockquote>/', '<q>'.get_the_excerpt().'</q>', get_the_content('') ) ?>
                              <a class="button button_small button_orange float_left" href="<?php the_permalink(); ?>"><span class="inside"><?php _e('read more', 'same'); ?></span></a>
                          </article>
                      <?php endif;?>

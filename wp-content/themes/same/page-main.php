@@ -74,52 +74,66 @@ get_header();
 	            endif;
 	            ?>
 
-            <ul class="columns dropcap">
-                <li class="column column33 first">
-                    <div class="inside">
-                        <h1>Dropcap</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Primis in faucibus lorem. Curabitur ultrices interdum. Integer adipiscing dictum enim.</p>
-                        <p class="read_more"><a href="#">Read more</a></p>
-                    </div>
-                </li>
-                <li class="column column33 second">
-                    <div class="inside">
-                        <h1>Lorem ipsum</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Primis in faucibus lorem. Curabitur ultrices interdum. Integer adipiscing dictum enim.</p>
-                        <p class="read_more"><a href="#">Read more</a></p>
-                    </div>
-                </li>
-                <li class="column column33 third">
-                    <div class="inside">
-                        <h1>Dolor sit!</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Primis in faucibus lorem. Curabitur ultrices interdum. Integer adipiscing dictum enim.</p>
-                        <p class="read_more"><a href="#">Read more</a></p>
-                    </div>
-                </li>
-            </ul>
+	            <?php
+	            $services = get_posts( array(
+		            'numberposts'      => 3,
+		            'meta_key'         => 'number',
+		            'orderby'          => 'meta_value_num',
+		            'order'            => 'ASC',
+		            'post_type'        => 'service',
+		            'post_status'      => 'publish',
+		            'suppress_filters' => true,
+	            ));
+	            ?>
+                <ul class="columns dropcap">
+		            <?php
+                    if( $services ):
+		            foreach( $services as $post ){
+			            setup_postdata($post);
+			            ?>
+                        <li class="column column33 <?php echo get_field('number'); ?>">
+                            <div class="inside">
+                                <h1><?php the_title() ?></h1>
+                                <p><?php the_excerpt(); ?></p>
+                                <p class="read_more"><a href="#"><?php _e('Read more', 'same'); ?></a></p>
+                            </div>
+                        </li>
+			            <?php
+		            }
+		            wp_reset_postdata();
+                    endif;
+		            ?>
+                </ul>
 
+	        <?php
+	        $services = get_posts( array(
+		        'numberposts'      => 3,
+		        'meta_key'         => 'icons',
+		        'orderby'          => 'date',
+		        'order'            => 'DESC',
+		        'post_type'        => 'service',
+		        'post_status'      => 'publish',
+		        'suppress_filters' => true,
+	        ));
+	        ?>
             <ul class="columns iconcap">
-                <li class="column column33 inews">
-                    <div class="inside">
-                        <h1>iCon</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Primis in faucibus lorem. Curabitur ultrices interdum. Integer adipiscing dictum enim.</p>
-                        <p class="read_more"><a href="#">Read more</a></p>
-                    </div>
-                </li>
-                <li class="column column33 italk">
-                    <div class="inside">
-                        <h1>iTalk</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Primis in faucibus lorem. Curabitur ultrices interdum. Integer adipiscing dictum enim.</p>
-                        <p class="read_more"><a href="#">Read more</a></p>
-                    </div>
-                </li>
-                <li class="column column33 icon">
-                    <div class="inside">
-                        <h1>iNews</h1>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Primis in faucibus lorem. Curabitur ultrices interdum. Integer adipiscing dictum enim.</p>
-                        <p class="read_more"><a href="#">Read more</a></p>
-                    </div>
-                </li>
+		        <?php
+		        if( $services ):
+		        foreach( $services as $post ){
+			        setup_postdata($post);
+			        ?>
+                    <li class="column column33 <?php echo get_field('icons'); ?>">
+                        <div class="inside">
+                            <h1><?php the_title() ?></h1>
+                            <p><?php the_excerpt(); ?></p>
+                            <p class="read_more"><a href="#"><?php _e('Read more', 'same'); ?></a></p>
+                        </div>
+                    </li>
+			        <?php
+		        }
+		        wp_reset_postdata();
+		        endif;
+		        ?>
             </ul>
 
             <div class="underline"></div>
