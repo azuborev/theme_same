@@ -6,10 +6,8 @@
  *@package same
  *
  */
-
 get_header();
 ?>
-    <!-- BEGIN TOP -->
     <section id="top">
         <div class="wrapper">
             <div id="top_slide" class="flexslider">
@@ -45,9 +43,6 @@ get_header();
             </div>
         </div>
     </section>
-    <!-- END TOP -->
-
-    <!-- BEGIN CONTENT -->
     <section id="content">
         <div class="wrapper page_text page_home">
 	            <?php
@@ -73,7 +68,6 @@ get_header();
 	            wp_reset_postdata();
 	            endif;
 	            ?>
-
 	            <?php
 	            $services = get_posts( array(
 		            'numberposts'      => 3,
@@ -104,7 +98,6 @@ get_header();
                     endif;
 		            ?>
                 </ul>
-
 	        <?php
 	        $services = get_posts( array(
 		        'numberposts'      => 3,
@@ -136,57 +129,55 @@ get_header();
 		        ?>
             </ul>
 
-            <div class="underline"></div>
 
+
+
+
+
+
+
+
+
+            <div class="underline"></div>
             <div class="portfolio">
                 <p class="all_projects"><a href="#">View all projects</a></p>
                 <h1>Portfolio</h1>
                 <div class="columns">
+	                <?php
+	                $rand_photo_list = get_posts( array(
+                                                    'numberposts'      => 4,
+//                                                    'orderby'          => 'rand',
+                                                    'post_type'        => 'cases',
+                                                    'post_status'      => 'publish',
+                                                    'suppress_filters' => true,
+                                                    'post_a_photo_on_the_main_page' => true,
+	                                            ));
+	                ?>
                     <div class="column column25">
-                        <a href="./wp-content/themes/same/assets/img/gfx/examples/img_big8.jpg" class="image lightbox" data-rel="prettyPhoto[gallery]">
+		                <?php
+		                if( $rand_photo_list ):
+                            var_dump($rand_photo_list);
+			                foreach( $rand_photo_list as $post ){
+				                setup_postdata($post);
+				                ?>
+                                <a href="<?php echo get_field('main_photo'); ?>" class="image lightbox" data-rel="prettyPhoto[gallery]">
 								<span class="inside">
-									<img src="./wp-content/themes/same/assets/img/gfx/examples/content_image197x140.jpg" alt="" />
-									<span class="caption">Rhoncus, dolor id rutrum ut.</span>
+									<img src="<?php echo get_field('portfolio_main_page_img'); ?>" alt="" />
+									<span class="caption"><?php echo get_field('photo_caption'); ?></span>
 								</span>
-                            <span class="image_shadow"></span>
-                        </a>
-                    </div>
-                    <div class="column column25">
-                        <a href="./wp-content/themes/same/assets/img/gfx/examples/img_big2.jpg" class="image lightbox" data-rel="prettyPhoto[gallery]">
-								<span class="inside">
-									<img src="./wp-content/themes/same/assets/img/gfx/examples/content_image197x140_2.jpg" alt="" />
-									<span class="caption">Rhoncus, dolor id rutrum ut.</span>
-								</span>
-                            <span class="image_shadow"></span>
-                        </a>
-                    </div>
-                    <div class="column column25">
-                        <a href="./wp-content/themes/same/assets/img/gfx/examples/img_big7.jpg" class="image lightbox" data-rel="prettyPhoto[gallery]">
-								<span class="inside">
-									<img src="./wp-content/themes/same/assets/img/gfx/examples/content_image197x140_3.jpg" alt="" />
-									<span class="caption">Rhoncus, dolor id rutrum ut.</span>
-								</span>
-                            <span class="image_shadow"></span>
-                        </a>
-                    </div>
-                    <div class="column column25">
-                        <a href="./wp-content/themes/same/assets/img/gfx/examples/img_big4.jpg" class="image lightbox" data-rel="prettyPhoto[gallery]">
-								<span class="inside">
-									<img src="./wp-content/themes/same/assets/img/gfx/examples/content_image197x140_4.jpg" alt="" />
-									<span class="caption">Rhoncus, dolor id rutrum ut.</span>
-								</span>
-                            <span class="image_shadow"></span>
-                        </a>
+                                    <span class="image_shadow"></span>
+                                </a>
+				                <?php
+			                }
+			                wp_reset_postdata();
+		                endif;
+		                ?>
                     </div>
                     <div class="clear"></div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- END CONTENT -->
-    </div>
-    </div>
-
 <?php
 get_footer();
 
