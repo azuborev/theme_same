@@ -16,6 +16,8 @@ require_once __DIR__ . '/include/widgets/widget-recent-posts.php';
 require_once __DIR__ . '/include/classes/class-header-menu-walker.php';
 require_once __DIR__ . '/include/classes/class-walker-category-custom.php';
 
+require_once __DIR__ . '/include/shortcodes/shortcode-link.php';
+
 if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
@@ -149,3 +151,8 @@ function filter_nav_menu_item_title( $title ) {
 	return '<span>' . $title . '</span>';
 }
 add_filter( 'nav_menu_item_title', 'filter_nav_menu_item_title' );
+
+function my_shortcode_title($title) {
+	return do_shortcode($title);
+}
+add_filter( 'the_title', 'my_shortcode_title' );

@@ -16,7 +16,7 @@ get_header();
                 <?php
                 $sliders = get_posts( array(
 	                'numberposts'      => 5,
-	                'meta_key'         => 'number_of_the_show',
+	                'meta_key'         => 'show_number',
 	                'orderby'          => 'meta_value_num',
 	                'order'            => 'ASC',
 	                'post_type'        => 'sliders',
@@ -29,51 +29,18 @@ get_header();
                     <?php
                     foreach( $sliders as $post ){
 	                    setup_postdata($post);
-                        var_dump(get_field('description_text', $post->ID));?>
+                       ?>
 	                    <li>
-
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gfx/examples/top_slide1.jpg" alt="" />
+                        <img src="<?php echo get_field('slider_image'); ?>" alt="" />
                         <p class="flex-caption">
-                            <strong>Lorem ipsum dolor sit amet</strong>
-                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Velit. Pellentesque molestie quis, venenatis consequat. Morbi egestas, justo neque, fringilla fringilla orci. Suspendisse placerat scelerisque...</span>
+                            <strong><?php echo $post->post_title; ?></strong>
+                            <span><?php echo get_field( 'des_text' ); ?></span>
                         </p>
                     </li>
-                        echo '<ul>'.$slider->post_title.'</ul>';
                     <?php
                     }
-
                     wp_reset_postdata();
                     ?>
-
-
-                    <li>
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/gfx/examples/top_slide2.jpg" alt="" />
-                        <p class="flex-caption">
-                            <strong>Sit amet</strong>
-                            <span>Pellentesque molestie quis, venenatis consequat. Morbi egestas, justo neque.</span>
-                        </p>
-                    </li>
-                    <li>
-                        <img src="./wp-content/themes/same/assets/img/gfx/examples/top_slide3.jpg" alt="" />
-                        <p class="flex-caption">
-                            <strong>Dolor amet sit</strong>
-                            <span>Velit, pellentesque molestie quis, venenatis consequat.</span>
-                        </p>
-                    </li>
-                    <li>
-                        <img src="./wp-content/themes/same/assets/img/gfx/examples/top_slide4.jpg" alt="" />
-                        <p class="flex-caption">
-                            <strong>Sit amet</strong>
-                            <span>Pellentesque molestie quis, venenatis consequat. Morbi egestas, justo neque.</span>
-                        </p>
-                    </li>
-                    <li>
-                        <img src="./wp-content/themes/same/assets/img/gfx/examples/top_slide5.jpg" alt="" />
-                        <p class="flex-caption">
-                            <strong>Lorem ipsum dolor sit amet</strong>
-                            <span>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Velit. Pellentesque molestie quis, venenatis consequat. Morbi egestas, justo neque, fringilla fringilla orci. Suspendisse placerat scelerisque...</span>
-                        </p>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -83,11 +50,29 @@ get_header();
     <!-- BEGIN CONTENT -->
     <section id="content">
         <div class="wrapper page_text page_home">
+	            <?php
+	            $introduces = get_posts( array(
+		            'numberposts'      => -1,
+		            'post_type'        => 'post',
+		            'post_status'      => 'publish',
+                    'category_name'         => 'company',
+	            ));
+	            if( $introduces ):
+                    foreach( $introduces as $post ){
+	                    setup_postdata($post);
+                       ?>
             <div class="introduction">
-                <h1>Lorem ipsum amet <a href="#">libero et</a> est fermentum suscipit sed id nulla. Donec elementum placerat tortort.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vehicula. Vivamus urna vitae arcu elit, consequat lorem velit sit amet metus. Phasellus purus. Aenean quis ante. Vestibulum aliquam iaculis leo, pretium wisi. Vivamus posuere vehicula dolor nonummy porttitor auctor, sapien vitae wisi vel odio.</p>
-                <a class="button button_big button_orange float_left"><span class="inside">read more</span></a>
+                        <div>
+                            <h1><?php the_title() ?></h1>
+                            <p><?php the_excerpt(); ?></p>
+                            <a class="button button_big button_orange float_left" href="<?php the_permalink(); ?>"><span class="inside"><?php _e('read more', 'same'); ?></span></a>
+                        </div>
             </div>
+	            <?php
+	            }
+	            wp_reset_postdata();
+	            endif;
+	            ?>
 
             <ul class="columns dropcap">
                 <li class="column column33 first">

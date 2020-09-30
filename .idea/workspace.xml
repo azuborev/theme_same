@@ -11,28 +11,37 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0dc40b25-dab5-48a7-a903-d4a76bd80af7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide1-150x150.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide1-300x147.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide1-768x376.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide2-150x150.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide2-300x147.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide2-768x376.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide3-150x150.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide3-300x147.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide3-768x376.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide4-150x150.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide4-300x147.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide4-768x376.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide5-150x150.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide5-300x147.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide5-768x376.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide5.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/breadcrumbs.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/breadcrumbs.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/functions.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/functions.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/same/page-main.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/page-main.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214-150x150.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214-300x93.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214-300x93.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214_2-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214_2-150x150.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214_2-300x93.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214_2-300x93.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214_2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image689x214_2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide1-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide1-150x150.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide1-300x147.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide1-300x147.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide1-768x376.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide1-768x376.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide2-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide2-150x150.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide2-300x147.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide2-300x147.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide2-768x376.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide2-768x376.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide3-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide3-150x150.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide3-300x147.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide3-300x147.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide3-768x376.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide3-768x376.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide4-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide4-150x150.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide4-300x147.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide4-300x147.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide4-768x376.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide4-768x376.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide4.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide5-150x150.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide5-150x150.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide5-300x147.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide5-300x147.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide5-768x376.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide5-768x376.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide5.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/top_slide5.jpg" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +101,8 @@
       <workItem from="1601275928853" duration="615000" />
       <workItem from="1601276557024" duration="26128000" />
       <workItem from="1601361125008" duration="199000" />
-      <workItem from="1601361554362" duration="22933000" />
+      <workItem from="1601361554362" duration="23048000" />
+      <workItem from="1601448689744" duration="1544000" />
     </task>
     <servers />
   </component>
