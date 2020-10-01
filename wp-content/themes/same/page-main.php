@@ -21,6 +21,7 @@ get_header();
 	                'location'         => 'header-of-main-page',
 	                'post_status'      => 'publish',
 	                'suppress_filters' => true,
+
                  ));
                 ?>
                 <ul class="slides">
@@ -128,38 +129,33 @@ get_header();
 		        endif;
 		        ?>
             </ul>
-
-
-
-
-
-
-
-
-
-
             <div class="underline"></div>
             <div class="portfolio">
-                <p class="all_projects"><a href="#">View all projects</a></p>
+                <p class="all_projects"><a href="./cases">View all projects</a></p>
                 <h1>Portfolio</h1>
                 <div class="columns">
 	                <?php
 	                $rand_photo_list = get_posts( array(
                                                     'numberposts'      => 4,
-//                                                    'orderby'          => 'rand',
+                                                    'orderby'          => 'rand',
                                                     'post_type'        => 'cases',
                                                     'post_status'      => 'publish',
+                                                        'meta_query' => array(
+                                                                                array(
+                                                                                    'key' => 'posted_photo',
+                                                                                    'compare' => '==',
+                                                                                    'value' => '1'
+                                                                                )
+                                                                            ),
                                                     'suppress_filters' => true,
-                                                    'post_a_photo_on_the_main_page' => true,
 	                                            ));
-	                ?>
-                    <div class="column column25">
-		                <?php
+
 		                if( $rand_photo_list ):
-                            var_dump($rand_photo_list);
+//
 			                foreach( $rand_photo_list as $post ){
 				                setup_postdata($post);
 				                ?>
+                            <div class="column column25">
                                 <a href="<?php echo get_field('main_photo'); ?>" class="image lightbox" data-rel="prettyPhoto[gallery]">
 								<span class="inside">
 									<img src="<?php echo get_field('portfolio_main_page_img'); ?>" alt="" />
@@ -167,17 +163,20 @@ get_header();
 								</span>
                                     <span class="image_shadow"></span>
                                 </a>
+                            </div>
 				                <?php
 			                }
 			                wp_reset_postdata();
 		                endif;
 		                ?>
-                    </div>
+
                     <div class="clear"></div>
                 </div>
             </div>
         </div>
     </section>
+    </div>
+    </div>
 <?php
 get_footer();
 

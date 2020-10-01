@@ -10,51 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dc40b25-dab5-48a7-a903-d4a76bd80af7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image197x140-150x140.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image197x140.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image197x140_2-150x140.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image197x140_2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image197x140_3-150x140.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image197x140_3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image197x140_4-150x140.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/content_image197x140_4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big1-150x150.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big1-212x300.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big2-150x150.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big2-201x300.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big3-150x150.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big3-300x300.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big3-768x768.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big4-150x150.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big4-300x300.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big4-768x768.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big5-150x150.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big5-300x269.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big5-768x689.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big5.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big6-150x150.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big6-300x200.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big6-768x512.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big6.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big7-150x150.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big7-200x300.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big7.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big8-150x150.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big8-300x217.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big8-768x557.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big8.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big9-150x150.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big9-300x289.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big9-768x740.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/wp-content/uploads/2020/09/img_big9.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/page-main.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/page-main.php" afterDir="false" />
-    </list>
+    <list default="true" id="0dc40b25-dab5-48a7-a903-d4a76bd80af7" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -114,7 +70,7 @@
       <workItem from="1601276557024" duration="26128000" />
       <workItem from="1601361125008" duration="199000" />
       <workItem from="1601361554362" duration="23048000" />
-      <workItem from="1601448689744" duration="14567000" />
+      <workItem from="1601448689744" duration="15050000" />
     </task>
     <servers />
   </component>

@@ -17,5 +17,7 @@ get_header();
 			</header>
 		</section>
 	</body>
+    </div>
+    </div>
 <?php
 get_footer();
