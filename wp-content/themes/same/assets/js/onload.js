@@ -159,22 +159,26 @@ $(document).ready(function(){
 	var $filterType = $('#portfolio_categories li.active a').attr('class');
 	var $holder = $('.portfolio_items');
 	var $data = $holder.clone();
+
+	//repeat photos in all portfolio
+		$('[data-id]').each(function() {
+			var dataIdAttr = $(this).attr('data-id');
+			var selector = '[data-id=' + dataIdAttr + ']';
+			if ($(selector).length > 1) {
+				$(selector).not(':first').remove();
+			}
+		});
+
+		var $class_all_holder = $('.portfolio_items');
+		var $class_all_data = $class_all_holder.clone();
+
 	jQuery('#portfolio_categories li a').click(function(e) {
 		$('#portfolio_categories li').removeClass('active');
 		var $filterType = $(this).attr('class');
 		$(this).parent().addClass('active');
 		if ($filterType == 'all') {
-/////
-			$('[data-id]').each(function() {
-				var dataIdAttr = $(this).attr('data-id'),
-					selector = '[data-id=' + dataIdAttr + ']';
-				if ($(selector).length > 1) {
-					$(selector).not(':first').remove();
-				}
-			});
-			/////
 
-			var $filteredData = $data.find('li');
+			var $filteredData = $class_all_data.find('li');
 		}
 		else {
 			var $filteredData = $data.find('li[data-type=' + $filterType + ']');

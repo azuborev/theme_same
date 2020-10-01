@@ -156,7 +156,8 @@ function filter_nav_menu_item_title( $title ) {
 }
 add_filter( 'nav_menu_item_title', 'filter_nav_menu_item_title' );
 
-function my_shortcode_title($title) {
+function custom_shortcode_title($title) {
 	return do_shortcode($title);
 }
-add_filter( 'the_title', 'my_shortcode_title' );
+add_filter( 'the_title', 'custom_shortcode_title' );
+

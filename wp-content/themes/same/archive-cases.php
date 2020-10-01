@@ -52,12 +52,8 @@ get_header();
 			            foreach( $portfolio_list as $post ){
 				            setup_postdata($post);
 				            $current_term = get_the_terms($post->ID, 'case_category');
-				            $excerpt = strip_tags(get_field('case_photo_description'));
-				            $excerpt =  substr($excerpt, 0, 100);
-				            $excerpt = rtrim($excerpt, "!,.-");
-				            $excerpt = substr($excerpt, 0, strrpos($excerpt, ' '));
-
-				            for ($i=0;$i<count($current_term);$i++) {
+				            $count_terms = count($current_term);
+				            for ($i=0;$i<$count_terms;$i++) {
 					            ?>
                                 <li data-type="<?php echo $current_term[$i]->slug; ?>" data-id="id-<?php echo $post->ID ?>" class="column column33">
                                     <a href="<?php echo get_field('case_main_photo')['url']; ?>" data-rel="prettyPhoto[gallery]" class="portfolio_image lightbox">
@@ -67,7 +63,7 @@ get_header();
                                         </div>
                                     </a>
                                     <h1><?php the_title(); ?></h1>
-                                    <p><?php echo $excerpt.'...'; ?></p>
+                                    <p><?php the_excerpt(); ?></p>
                                     <a class="button button_small button_orange" href="<?php echo $post->guid; ?>"><span class="inside"><?php _e('Read more', 'same'); ?></a></span></a>
                                 </li>
 					            <?php
