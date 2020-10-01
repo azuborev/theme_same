@@ -140,7 +140,7 @@ get_header();
                                                     'orderby'          => 'rand',
                                                     'post_type'        => 'cases',
                                                     'post_status'      => 'publish',
-                                                        'meta_query' => array(
+                                                    'meta_query' => array(
                                                                                 array(
                                                                                     'key' => 'case_portfolio_main',
                                                                                     'compare' => '==',

@@ -163,7 +163,6 @@ $(document).ready(function(){
 		$('#portfolio_categories li').removeClass('active');
 		var $filterType = $(this).attr('class');
 		$(this).parent().addClass('active');
-	
 		if ($filterType == 'all') {
 			var $filteredData = $data.find('li');
 		}
