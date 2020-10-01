@@ -14,11 +14,11 @@ get_header();
                 <?php
                 $sliders = get_posts( array(
 	                'numberposts'      => 5,
-	                'meta_key'         => 'show_number',
+	                'meta_key'         => 'slider_number',
 	                'orderby'          => 'meta_value_num',
 	                'order'            => 'ASC',
 	                'post_type'        => 'sliders',
-	                'location'         => 'header-of-main-page',
+	                'location'         => 'main_header',
 	                'post_status'      => 'publish',
 	                'suppress_filters' => true,
 
@@ -30,10 +30,10 @@ get_header();
 	                    setup_postdata($post);
                        ?>
 	                    <li>
-                        <img src="<?php echo get_field('slider_image'); ?>" alt="" />
+                        <img src="<?php the_field('slider_image'); ?>" alt="" />
                         <p class="flex-caption">
-                            <strong><?php echo $post->post_title; ?></strong>
-                            <span><?php echo get_field( 'des_text' ); ?></span>
+                            <strong><?php echo the_title(); ?></strong>
+                            <span><?php echo the_field( 'slider_text' ); ?></span>
                         </p>
                     </li>
                     <?php
@@ -72,7 +72,7 @@ get_header();
 	            <?php
 	            $services = get_posts( array(
 		            'numberposts'      => 3,
-		            'meta_key'         => 'number',
+		            'meta_key'         => 'service_number',
 		            'orderby'          => 'meta_value_num',
 		            'order'            => 'ASC',
 		            'post_type'        => 'service',
@@ -86,11 +86,11 @@ get_header();
 		            foreach( $services as $post ){
 			            setup_postdata($post);
 			            ?>
-                        <li class="column column33 <?php echo get_field('number'); ?>">
+                        <li class="column column33 <?php the_field('service_number'); ?>">
                             <div class="inside">
                                 <h1><?php the_title() ?></h1>
                                 <p><?php the_excerpt(); ?></p>
-                                <p class="read_more"><a href="#"><?php _e('Read more', 'same'); ?></a></p>
+                                <p class="read_more"><a href="<?php the_permalink(); ?>"><?php _e('Read more', 'same'); ?></a></p>
                             </div>
                         </li>
 			            <?php
@@ -102,7 +102,7 @@ get_header();
 	        <?php
 	        $services = get_posts( array(
 		        'numberposts'      => 3,
-		        'meta_key'         => 'icons',
+		        'meta_key'         => 'service_icone',
 		        'orderby'          => 'date',
 		        'order'            => 'DESC',
 		        'post_type'        => 'service',
@@ -116,11 +116,11 @@ get_header();
 		        foreach( $services as $post ){
 			        setup_postdata($post);
 			        ?>
-                    <li class="column column33 <?php echo get_field('icons'); ?>">
+                    <li class="column column33 <?php the_field('service_icone'); ?>">
                         <div class="inside">
                             <h1><?php the_title() ?></h1>
                             <p><?php the_excerpt(); ?></p>
-                            <p class="read_more"><a href="#"><?php _e('Read more', 'same'); ?></a></p>
+                            <p class="read_more"><a href="<?php the_permalink(); ?>"><?php _e('Read more', 'same'); ?></a></p>
                         </div>
                     </li>
 			        <?php
@@ -142,24 +142,22 @@ get_header();
                                                     'post_status'      => 'publish',
                                                         'meta_query' => array(
                                                                                 array(
-                                                                                    'key' => 'posted_photo',
+                                                                                    'key' => 'case_portfolio_main',
                                                                                     'compare' => '==',
                                                                                     'value' => '1'
                                                                                 )
                                                                             ),
                                                     'suppress_filters' => true,
 	                                            ));
-
 		                if( $rand_photo_list ):
-//
 			                foreach( $rand_photo_list as $post ){
 				                setup_postdata($post);
 				                ?>
                             <div class="column column25">
-                                <a href="<?php echo get_field('main_photo'); ?>" class="image lightbox" data-rel="prettyPhoto[gallery]">
+                                <a href="<?php echo get_field('case_main_photo')['url']; ?>" class="image lightbox" data-rel="prettyPhoto[gallery]">
 								<span class="inside">
-									<img src="<?php echo get_field('portfolio_main_page_img'); ?>" alt="" />
-									<span class="caption"><?php echo get_field('photo_caption'); ?></span>
+									<img src="<?php echo get_field('case_portfolio_main_photo')['url']; ?>" alt="<?php echo get_field('case_portfolio_main_photo')['alt']; ?>" />
+									<span class="caption"><?php the_field('case_photo_caption'); ?></span>
 								</span>
                                     <span class="image_shadow"></span>
                                 </a>
@@ -169,7 +167,6 @@ get_header();
 			                wp_reset_postdata();
 		                endif;
 		                ?>
-
                     <div class="clear"></div>
                 </div>
             </div>

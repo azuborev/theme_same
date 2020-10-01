@@ -10,7 +10,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0dc40b25-dab5-48a7-a903-d4a76bd80af7" name="Default Changelist" comment="" />
+    <list default="true" id="0dc40b25-dab5-48a7-a903-d4a76bd80af7" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sitemap.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sitemap.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/assets/css/reset.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/assets/css/reset.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/same/page-main.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/same/page-main.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -71,6 +76,7 @@
       <workItem from="1601361125008" duration="199000" />
       <workItem from="1601361554362" duration="23048000" />
       <workItem from="1601448689744" duration="15050000" />
+      <workItem from="1601533772986" duration="3467000" />
     </task>
     <servers />
   </component>
