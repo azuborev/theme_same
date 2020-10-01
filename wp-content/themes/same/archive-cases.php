@@ -57,19 +57,21 @@ get_header();
 				            $excerpt = rtrim($excerpt, "!,.-");
 				            $excerpt = substr($excerpt, 0, strrpos($excerpt, ' '));
 
-				            ?>
-                            <li data-type="<?php echo $current_term[0]->slug; ?>" data-id="id-<?php echo $post->ID ?>" class="column column33">
-                                <a href="<?php echo get_field('case_main_photo')['url']; ?>" data-rel="prettyPhoto[gallery]" class="portfolio_image lightbox">
-                                    <div class="inside">
-                                        <img alt="<?php echo get_field('case_portfolio_preview_photo')['alt']; ?>" src="<?php echo get_field('case_portfolio_preview_photo')['url']; ?>">
-                                        <div class="mask"></div>
-                                    </div>
-                                </a>
-                                <h1><?php the_title(); ?></h1>
-                                <p><?php echo $excerpt.'...'; ?></p>
-                                <a class="button button_small button_orange" href="<?php echo $post->guid; ?>"><span class="inside"><?php _e('Read more', 'same'); ?></a></span></a>
-                            </li>
-				            <?php
+				            for ($i=0;$i<count($current_term);$i++) {
+					            ?>
+                                <li data-type="<?php echo $current_term[$i]->slug; ?>" data-id="id-<?php echo $post->ID ?>" class="column column33">
+                                    <a href="<?php echo get_field('case_main_photo')['url']; ?>" data-rel="prettyPhoto[gallery]" class="portfolio_image lightbox">
+                                        <div class="inside">
+                                            <img alt="<?php echo get_field('case_portfolio_preview_photo')['alt']; ?>" src="<?php echo get_field('case_portfolio_preview_photo')['url']; ?>">
+                                            <div class="mask"></div>
+                                        </div>
+                                    </a>
+                                    <h1><?php the_title(); ?></h1>
+                                    <p><?php echo $excerpt.'...'; ?></p>
+                                    <a class="button button_small button_orange" href="<?php echo $post->guid; ?>"><span class="inside"><?php _e('Read more', 'same'); ?></a></span></a>
+                                </li>
+					            <?php
+                            }
 			            }
 			            wp_reset_postdata();
 			            ?>

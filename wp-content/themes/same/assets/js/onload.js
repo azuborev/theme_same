@@ -164,6 +164,16 @@ $(document).ready(function(){
 		var $filterType = $(this).attr('class');
 		$(this).parent().addClass('active');
 		if ($filterType == 'all') {
+/////
+			$('[data-id]').each(function() {
+				var dataIdAttr = $(this).attr('data-id'),
+					selector = '[data-id=' + dataIdAttr + ']';
+				if ($(selector).length > 1) {
+					$(selector).not(':first').remove();
+				}
+			});
+			/////
+
 			var $filteredData = $data.find('li');
 		}
 		else {
