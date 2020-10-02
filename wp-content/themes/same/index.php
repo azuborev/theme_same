@@ -11,9 +11,7 @@
  *
  * @package same
  */
-
 get_header();
-
 ?>
     <!-- BEGIN CONTENT -->
     <section id="content">
@@ -21,7 +19,6 @@ get_header();
             <?php
             if ( is_home() ) :
             ?>
-
             <h1 class="page_title">Blog</h1>
 	        <?php get_template_part('breadcrumbs'); ?>
             <div class="columns">
@@ -57,33 +54,27 @@ get_header();
 	            <?php
                 else :
                 ?>
-                <h1 class="page_title"><?php _e('Posts', 'same');?></h1>
 	            <?php get_template_part('breadcrumbs'); ?>
                 <div class="columns">
                     <div class="column column75">
 			            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
                             <article class="article">
-
                                 <h1><?php the_title() ?></h1>
 	                                    <?php
                                         if( has_post_thumbnail() ) :
                                             ?>
-                                             <div class="article_image nomargin">
-                                            <div class="inside">
-                                            <?php
-                                            the_post_thumbnail();
-	                                        ?>
-                                            </div></div>
-                                            <?php
-                                        endif;
-							         ?>
+                                            <div class="article_image nomargin">
+                                                <div class="inside">
+			                                        <?php the_post_thumbnail(); ?>
+                                                </div>
+                                            </div>
+                                       <?php endif; ?>
                                 <div class="article_details">
 
                                     <ul class="article_author_date">
                                         <li><em><?php _e('Add:', 'same'); ?></em> <?php the_time('d.m.Y') ?></li>
                                         <li><em><?php _e('Author:', 'same'); ?></em> <a href="<?php echo get_author_posts_url($post->post_author); ?>" ><?php the_author() ?></a></li>
                                     </ul>
-                                    <p class="article_comments"><em><?php _e('Comment: ', 'same'); ?></em><?php comments_number('0', '1', '%'); ?></p>
                                 </div>
 	                            <?php
 	                            if( has_excerpt() ) :

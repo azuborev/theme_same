@@ -27,7 +27,7 @@ get_header();
 						<?php
 						endwhile;
 					else: ?>
-                    <p><?php _e('Nothing  found', 'same'); ?></p>
+                    <p><?php _e('Nothing found', 'same'); ?></p>
 					<?php endif; ?>
                 </div>
             </div>
