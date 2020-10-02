@@ -59,8 +59,8 @@ get_header();
                        ?>
             <div class="introduction">
                         <div>
-                            <h1><?php the_title() ?></h1>
-                            <p><?php the_excerpt(); ?></p>
+                            <h1><?php echo get_the_excerpt() ?></h1>
+                            <p><?php the_content(''); ?></p>
                             <a class="button button_big button_orange float_left" href="<?php the_permalink(); ?>"><span class="inside"><?php _e('read more', 'same'); ?></span></a>
                         </div>
             </div>

@@ -68,6 +68,12 @@ get_header();
 			                                        <?php the_post_thumbnail(); ?>
                                                 </div>
                                             </div>
+                                        <?php elseif (get_field('case_main_photo')) : ?>
+                                                <div class="inside">
+                                                    <?php
+                                                    echo wp_get_attachment_image( get_field('case_main_photo')['ID'], 'medium' );
+                                                    ?>
+                                                </div>
                                        <?php endif; ?>
                                 <div class="article_details">
 
