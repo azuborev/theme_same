@@ -3,7 +3,7 @@ get_header();
 ?>
     <section id="content">
         <div class="wrapper page_text">
-            <h1 class="page_title">Portfolio</h1>
+            <h1 class="page_title"><?php _e( 'Portfolio', 'same' ); ?></h1>
 			<?php get_template_part('breadcrumbs'); ?>
             <?php
                 $portfolio_categories = get_terms( array(
