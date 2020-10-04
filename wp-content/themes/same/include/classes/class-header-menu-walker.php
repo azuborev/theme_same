@@ -1,5 +1,13 @@
 <?php
 /**
+ * Header Menu Walker file.
+ *
+ * @file changes menu output.
+ *
+ * @package same.
+ */
+
+/**
  * Class Header_Menu_Walker
  */
 class Header_Menu_Walker extends Walker_Nav_Menu {
@@ -10,7 +18,7 @@ class Header_Menu_Walker extends Walker_Nav_Menu {
 	 * @param int    $depth - depth of the item.
 	 * @param array  $args - an array of additional arguments.
 	 */
-	public function start_lvl( &$output, $depth = 0, $args = array() ) {
+	public function start_lvl( &$output = '', $depth = 0, $args = array() ) {
 		$indent  = str_repeat( "\t", $depth );
 		$output .= "\n $indent<div class = 'submenu' ><ul> \n";
 	}
@@ -22,7 +30,7 @@ class Header_Menu_Walker extends Walker_Nav_Menu {
 	 * @param int    $depth - depth of the item.
 	 * @param array  $args - an array of additional arguments.
 	 */
-	public function end_lvl( &$output, $depth = 0, $args = array() ) {
+	public function end_lvl( &$output = '', $depth = 0, $args = array() ) {
 		$indent  = str_repeat( "\t", $depth );
 		$output .= "$indent</ul></div>\n";
 	}

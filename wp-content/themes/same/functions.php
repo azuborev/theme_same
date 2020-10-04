@@ -10,7 +10,7 @@
 require_once __DIR__ . '/include/widgets/widget-social-links.php';
 require_once __DIR__ . '/include/widgets/widget-text.php';
 require_once __DIR__ . '/include/widgets/widget-contacts.php';
-require_once __DIR__ . '/include/widgets/widget-category-list.php';
+require_once __DIR__ . '/include/widgets/class-same-widget-category-list.php';
 require_once __DIR__ . '/include/widgets/widget-recent-posts.php';
 
 require_once __DIR__ . '/include/classes/class-header-menu-walker.php';
