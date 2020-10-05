@@ -1,17 +1,21 @@
 <?php
 /**
- * Same functions and definitions
+ * File with main functions.
  *
- * @link https://same.com
+ * @package files.
+ */
+
+/**
+ * Same functions and definitions
  *
  * @package same
  */
 
-require_once __DIR__ . '/include/widgets/widget-social-links.php';
-require_once __DIR__ . '/include/widgets/widget-text.php';
-require_once __DIR__ . '/include/widgets/widget-contacts.php';
+require_once __DIR__ . '/include/widgets/class-same-widget-social-links.php';
+require_once __DIR__ . '/include/widgets/class-same-widget-text.php';
+require_once __DIR__ . '/include/widgets/class-same-widget-contacts.php';
 require_once __DIR__ . '/include/widgets/class-same-widget-category-list.php';
-require_once __DIR__ . '/include/widgets/widget-recent-posts.php';
+require_once __DIR__ . '/include/widgets/class-same-widget-recent-posts.php';
 
 require_once __DIR__ . '/include/classes/class-header-menu-walker.php';
 require_once __DIR__ . '/include/classes/class-walker-category-custom.php';
@@ -60,7 +64,7 @@ function same_scripts() {
 	wp_enqueue_script( 'same-flexslider', get_template_directory_uri() . '/assets/js/jquery.flexslider.min.js', array( 'same-jquery' ), _S_VERSION, true );
 	wp_enqueue_script( 'same-prettyphoto', get_template_directory_uri() . '/assets/js/jquery.prettyphoto.min.js', array( 'same-jquery' ), _S_VERSION, true );
 	wp_enqueue_script( 'same-stylesheettoggle', get_template_directory_uri() . '/assets/js/jquery.stylesheettoggle.js', array( 'same-jquery' ), _S_VERSION, true );
-	if( is_post_type_archive( 'cases' ) ){
+	if ( is_post_type_archive( 'cases' ) ) {
 		wp_enqueue_script( 'same-quicksand', get_template_directory_uri() . '/assets/js/jquery.quicksand.js', array( 'same-jquery' ), _S_VERSION, true );
 	}
 	wp_enqueue_script( 'same-onload', get_template_directory_uri() . '/assets/js/onload.js', array( 'same-jquery', 'same-prettyphoto' ), _S_VERSION, true );
@@ -75,7 +79,7 @@ function same_widgets_init() {
 			'name'          => esc_html__( 'Sidebar: aside', 'same' ),
 			'id'            => 'same-sidebar-aside',
 			'description'   => esc_html__( 'Add widgets here.', 'same' ),
-			'before_widget' =>  '<div class="padd16bot">',
+			'before_widget' => '<div class="padd16bot">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h1 class="widget-title">',
 			'after_title'   => '</h1>',
@@ -144,6 +148,7 @@ function same_widgets_init() {
 	register_widget( 'same_widget_recent_posts' );
 }
 add_action( 'widgets_init', 'same_widgets_init' );
+
 /**
  * Add tag <span> in menu-header.
  *
@@ -151,13 +156,19 @@ add_action( 'widgets_init', 'same_widgets_init' );
  *
  * @return string in tag <span>.
  */
-function filter_nav_menu_item_title( $title ) {
+function filter_nav_menu_item_title( $title = '' ) {
 	return '<span>' . $title . '</span>';
 }
 add_filter( 'nav_menu_item_title', 'filter_nav_menu_item_title' );
 
-function custom_shortcode_title($post_excerpt) {
-	return do_shortcode($post_excerpt);
+/**
+ * Add shortcode for excerpt.
+ *
+ * @param string $post_excerpt The post excerpt.
+ * @return string
+ */
+function custom_shortcode_title( $post_excerpt = '' ) {
+	return do_shortcode( $post_excerpt );
 }
 add_filter( 'get_the_excerpt', 'custom_shortcode_title' );
 

@@ -57,7 +57,13 @@ class Same_Widget_Recent_Posts extends WP_Widget {
 		<?php
 	}
 
-	public function widget($args, $instance) {
+	/**
+	 * Widget front-end part.
+	 *
+	 * @param array $args tags data.
+	 * @param array $instance entered data.
+	 */
+	public function widget( $args = array(), $instance = array() ) {
 
 		$query_args = array(
 			'numberposts'      => $instance['number'],
@@ -72,29 +78,27 @@ class Same_Widget_Recent_Posts extends WP_Widget {
 			'suppress_filters' => true,
 		);
 
-		$posts = wp_get_recent_posts( $query_args, OBJECT);
+		$posts = wp_get_recent_posts( $query_args, OBJECT );
 
 		$title = apply_filters( 'title', $instance['title'] );
 		if ( ! empty( $title ) ) {
 			echo $args['before_title'] . $title . $args['after_title'];
 		}
 		?>
-		<ul class="recent_posts">
+        <ul class="recent_posts">
         <?php
-		foreach( $posts as $post ){
-			?>
-			<li class="item">
-			<a class="thumbnail" href="<?php the_permalink($post->ID); ?>"><?php echo get_the_post_thumbnail($post->ID); ?></a>
-			<div class="text">
-				<h4 class="title"><a href="<?php the_permalink($post->ID); ?>"><?php echo $post->post_title; ?></a></h4>
-				<p class="data">
-					<span class="date"><?php echo date('j/n/Y', strtotime($post->post_date)); ?></span>
-				</p>
-			</div>
+        foreach ( $posts as $post ) :
+        ?>
+            <li class="item">
+                <a class="thumbnail" href="<?php the_permalink( $post->ID ); ?>"><?php echo get_the_post_thumbnail( $post->ID ); ?></a>
+                <div class="text">
+			    	<h4 class="title"><a href="<?php the_permalink( $post->ID ); ?>"><?php echo $post->post_title; ?></a></h4>
+			    	<p class="data">
+			    		<span class="date"><?php echo date( 'j/n/Y', strtotime( $post->post_date ) ); ?></span>
+			    	</p>
+			    </div>
             </li>
-			<?php
-		}
-		?>
+            <?php endforeach; ?>
         </ul>
         <?php
 	}
@@ -105,11 +109,11 @@ class Same_Widget_Recent_Posts extends WP_Widget {
 	 * @param array $old_instance old data.
 	 * @return array $instance
 	 */
-	public function update( $new_instance, $old_instance ) {
-		$instance = array();
-		$instance['title'] = ( ! empty( $new_instance['title'] ) ) ? wp_strip_all_tags( $new_instance['title'] ) : '';
+	public function update( $new_instance = array(), $old_instance = array() ) {
+		$instance              = array();
+		$instance['title']     = ( ! empty( $new_instance['title'] ) ) ? wp_strip_all_tags( $new_instance['title'] ) : '';
 		$instance['post-type'] = wp_strip_all_tags( $new_instance['post-type'] );
-		$instance['number'] =( is_numeric( $new_instance['number'] ) ) ? strip_tags( $new_instance['number'] ) : '3' ;
+		$instance['number']    = ( is_numeric( $new_instance['number'] ) ) ? wp_strip_all_tags( $new_instance['number'] ) : '3';
 		return $instance;
 	}
 }

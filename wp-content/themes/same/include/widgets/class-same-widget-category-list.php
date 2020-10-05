@@ -2,9 +2,7 @@
 /**
  * Shortcode file.
  *
- * @file add widget class.
- *
- * @package same.
+ * @package files.
  */
 
 /**
@@ -23,7 +21,7 @@ class Same_Widget_Category_List extends WP_Widget {
 	}
 
 	/**
-	 * Form backend for widget
+	 * Backend Form for widget
 	 *
 	 * @param array $instance title and text.
 	 * @return string|void
@@ -38,18 +36,17 @@ class Same_Widget_Category_List extends WP_Widget {
 		$taxonomies = get_taxonomies( $args, $output );
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'id-title' ); ?>"><?php _e( 'Title', 'same' ); ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id( 'id-title' ); ?>" type="text"
-			    name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo esc_attr( $title ); ?>">
+			<label for="<?php echo $this->get_field_id( 'id-title' ); ?>"><?php esc_html_e( 'Title', 'same' ); ?></label>
+			<input class="widefat" id="<?php echo $this->get_field_id( 'id-title' ); ?>" type="text" name="<?php echo $this->get_field_name( 'title' ); ?>" value="<?php echo esc_attr( $title ); ?>">
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'id-taxonomy' ); ?>"><?php _e( 'Taxonomy', 'same' ); ?></label>
+			<label for="<?php echo $this->get_field_id( 'id-taxonomy' ); ?>"><?php esc_html_e( 'Taxonomy', 'same' ); ?></label>
 		<select class="widefat" name="<?php echo $this->get_field_name( 'taxonomy' ); ?>" id="<?php echo $this->get_field_id( 'id-taxonomy' ); ?>">
 			<?php
 			foreach ( $taxonomies as $tax ) :
 				?>
-				<option value="<?php echo $tax->name; ?>" <?php selected( $taxonomy, $tax->name ); ?>
-				><?php echo $tax->label; ?></option>
+				<option value="<?php echo esc_attr( $tax->name ); ?>" <?php selected( $taxonomy, $tax->name ); ?>
+				><?php echo esc_attr( $tax->label ); ?></option>
 			<?php endforeach; ?>
 		</select>
 		</p>
@@ -57,7 +54,7 @@ class Same_Widget_Category_List extends WP_Widget {
 	}
 
 	/**
-	 * Widget front-end.
+	 * Widget front-end part.
 	 *
 	 * @param array $args tags data.
 	 * @param array $instance entered data.
@@ -89,7 +86,7 @@ class Same_Widget_Category_List extends WP_Widget {
 
 		$title = apply_filters( 'title', $instance['title'] );
 		if ( ! empty( $title ) ) {
-			echo $args['before_title']. $title . $args['after_title'];
+			echo $args['before_title'] . $title . $args['after_title'];
 		}
 		echo '<ul class="menu categories page_text">';
 		echo wp_list_categories( $query_args );

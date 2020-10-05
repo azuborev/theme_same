@@ -2,9 +2,7 @@
 /**
  * Header Menu Walker file.
  *
- * @file changes menu output.
- *
- * @package same.
+ * @package files.
  */
 
 /**

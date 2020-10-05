@@ -83,7 +83,7 @@ class Same_Widget_Social_Links extends WP_Widget {
 	 * @return array $instance
 	 */
 	public function update( $new_instance, $old_instance ) {
-		$instance = array();
+		$instance         = array();
 		$instance['link'] = ( ! empty( $new_instance['link'] ) ) ? wp_strip_all_tags( $new_instance['link'] ) : '#';
 		$instance['slug'] = wp_strip_all_tags( $new_instance['slug'] );
 		return $instance;
