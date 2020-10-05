@@ -13,8 +13,8 @@ get_header();
 		<div class="wrapper page_text">
 			<?php
 			?>
-			<h1 class="page_title"><?php  single_cat_title() ?></h1>
 			<?php get_template_part('breadcrumbs'); ?>
+			<h1 class="page_title"><?php  single_cat_title() ?></h1>
 			<div class="columns">
 				<div class="column column75">
 					<?php if (have_posts()) : while (have_posts()) : the_post(); ?>

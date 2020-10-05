@@ -19,8 +19,8 @@ get_header();
             <?php
             if ( is_home() ) :
             ?>
-            <h1 class="page_title">Blog</h1>
 	        <?php get_template_part('breadcrumbs'); ?>
+            <h1 class="page_title">Blog</h1>
             <div class="columns">
                 <div class="column column75">
                  <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
@@ -109,4 +109,3 @@ get_header();
     </div>
 <?php
 get_footer();
-

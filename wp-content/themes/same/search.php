@@ -9,6 +9,7 @@ get_header();
 <section id="content">
     <div class="wrapper page_text">
 	    <?php get_template_part('breadcrumbs'); ?>
+        <h1 class="page_title" ><?php _e('Search results', 'same'); ?></h1>
         <div class="columns">
             <div class="column column75">
                 <div class="wrapper page_text">
