@@ -2,8 +2,6 @@
 /**
  * Shortcode file.
  *
- * @file add shortcode.
- *
  * @package same.
  */
 

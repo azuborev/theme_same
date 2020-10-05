@@ -1,6 +1,6 @@
 <?php
 /**
- * File with main functions.
+ * File with main-functions.
  *
  * @package files.
  */

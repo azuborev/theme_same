@@ -8,8 +8,8 @@
 ?>
 <div class="column column25">
 	<?php
-	if(is_active_sidebar('same-sidebar-aside')) {
-		dynamic_sidebar('same-sidebar-aside');
+	if ( is_active_sidebar( 'same-sidebar-aside' ) ) {
+		dynamic_sidebar( 'same-sidebar-aside' );
 	}
 	?>
 </div>

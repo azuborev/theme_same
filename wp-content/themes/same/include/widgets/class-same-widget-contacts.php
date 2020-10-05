@@ -6,6 +6,7 @@
  */
 
 /**
+ *
  * Class Same_Widget_Contacts
  */
 class Same_Widget_Contacts extends WP_Widget {
@@ -87,7 +88,7 @@ class Same_Widget_Contacts extends WP_Widget {
 		}
 	}
 	/**
-	 * Updata, save data widget.
+	 * Update, save data widget.
 	 *
 	 * @param array $new_instance new data.
 	 * @param array $old_instance old data.

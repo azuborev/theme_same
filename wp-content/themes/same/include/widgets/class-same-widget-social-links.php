@@ -1,4 +1,9 @@
 <?php
+/**
+ * Shortcode file.
+ *
+ * @package files.
+ */
 
 /**
  * Class Same_Widget_Social_Links
@@ -41,48 +46,52 @@ class Same_Widget_Social_Links extends WP_Widget {
 	 * @param array $instance data about social network.
 	 * @return string|void
 	 */
-	public function form( $instance ) {
+	public function form( $instance = array() ) {
 		$link = ( ! empty( $instance['link'] ) ) ? $instance['link'] : '';
 		$name = ( ! empty( $instance['slug'] ) ) ? $instance['slug'] : '';
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'link' ); ?>"><?php _e( 'Link', 'same' ) ?></label>
-			<input class="widefat" id="<?php echo $this->get_field_id('link'); ?>" type="text"
-				   name="<?php echo $this->get_field_name('link'); ?>" value="<?php echo esc_attr( $link ); ?>">
+			<label for = "<?php echo $this->get_field_id( 'link' ); ?>"><?php esc_html_e( 'Link', 'same' ); ?></label>
+			<input class = "widefat" id = "<?php echo $this->get_field_id( 'link' ); ?>" type = "text"
+				name = "<?php echo $this->get_field_name( 'link' ); ?>" value = "<?php echo esc_attr( $link ); ?>">
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id('slug'); ?>"><?php _e( 'Social network', 'same' ) ?></label>
-			<select class="widefat" name="<?php echo $this->get_field_name( 'slug' ); ?>" id="<?php echo $this->get_field_id('slug'); ?>">
+			<label for = "<?php echo $this->get_field_id( 'slug' ); ?>"><?php esc_html_e( 'Social network', 'same' ); ?></label>
+			<select class = "widefat" name = "<?php echo $this->get_field_name( 'slug' ); ?>" id = "<?php echo $this->get_field_id( 'slug' ); ?>">
 				<?php
-				foreach ($this->socials as $slug => $desc):
+				foreach ( $this->socials as $slug => $desc ) :
 					?>
-					<option value="<?php echo $slug; ?>" <?php selected( $name, $slug, true ); ?>>
-						<?php echo $desc[0]; ?>
+					<option value = "<?php echo esc_attr( $slug ); ?>" <?php selected( $name, $slug, true ); ?>>
+						<?php echo esc_html( $desc[0] ); ?>
 					</option>
-				<?php endforeach;
-				?>
+				<?php endforeach; ?>
 			</select>
 		</p>
 		<?php
 	}
-
-	public function widget($args, $instance) {
-		$slug = $instance['slug'];
-		$link = $instance['link'];
-		$title = $this->socials[$slug][0];
+	/**
+	 * Widget front-end part.
+	 *
+	 * @param array $args tags data.
+	 * @param array $instance entered data.
+	 */
+	public function widget( $args = array(), $instance = array() ) {
+		$slug  = $instance['slug'];
+		$link  = $instance['link'];
+		$title = $this->socials[ $slug ][0];
 		?>
-		<li><a href="<?php echo $link ?>" class="<?php echo $title ?>" target="_blank"></a></li>
+		<li><a href = "<?php echo esc_attr( $link ); ?>" class = "<?php echo esc_attr( $title ); ?>" target = "_blank"></a></li>
 		<?php
 
 	}
 	/**
-	 * Updata, save data widget.
+	 * Update, save data widget.
 	 *
 	 * @param array $new_instance new data.
 	 * @param array $old_instance old data.
 	 * @return array $instance
 	 */
-	public function update( $new_instance, $old_instance ) {
+	public function update( $new_instance = array(), $old_instance = array() ) {
 		$instance         = array();
 		$instance['link'] = ( ! empty( $new_instance['link'] ) ) ? wp_strip_all_tags( $new_instance['link'] ) : '#';
 		$instance['slug'] = wp_strip_all_tags( $new_instance['slug'] );

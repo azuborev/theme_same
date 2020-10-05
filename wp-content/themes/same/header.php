@@ -9,50 +9,45 @@
 <!DOCTYPE HTML>
 <html <?php language_attributes(); ?>>
 <head>
-    <meta charset="<?php echo bloginfo('charset') ?>">
-    <?php wp_head(); ?>
+	<meta charset="<?php echo bloginfo( 'charset' ); ?>">
+	<?php wp_head(); ?>
 </head>
 <body>
 
-<!-- BEGIN STYLESHEET SWITCHER -->
 <div id="stylesheet_switcher">
-    <a href="#" id="switcher"></a>
-    <ul id="stylesheets">
-        <li>
-            <a href="#" class="sheet" id="light">
-                <span class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/gfx/stylesheet_light.jpg" alt="" /></span>
-                <span class="mask"></span>
-                <span class="name">Light version</span>
-            </a>
-        </li>
-        <li>
-            <a href="#" class="sheet" id="dark">
-                <span class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/gfx/stylesheet_dark.jpg" alt="" /></span>
-                <span class="mask"></span>
-                <span class="name">Dark version</span>
-            </a>
-        </li>
-    </ul>
+	<a href="#" id="switcher"></a>
+	<ul id="stylesheets">
+		<li>
+			<a href="#" class="sheet" id="light">
+				<span class="image"><img src="<?php echo esc_attr( get_template_directory_uri() ); ?>/assets/img/gfx/stylesheet_light.jpg" alt="" /></span>
+				<span class="mask"></span>
+				<span class="name">Light version</span>
+			</a>
+		</li>
+		<li>
+			<a href="#" class="sheet" id="dark">
+				<span class="image"><img src="<?php echo esc_attr( get_template_directory_uri() ); ?>/assets/img/gfx/stylesheet_dark.jpg" alt="" /></span>
+				<span class="mask"></span>
+				<span class="name">Dark version</span>
+			</a>
+		</li>
+	</ul>
 </div>
-<!-- END STYLESHEET SWITCHER -->
-
-<!-- BEGIN PAGE -->
 <div id="page">
-    <div id="page_top">
-        <div id="page_top_in">
-            <!-- BEGIN TITLEBAR -->
-            <header id="titlebar">
-                <div class="wrapper">
-                    <?php the_custom_logo(); ?>
-                    <div id="titlebar_right">
-                        <ul id="social_icons">
+	<div id="page_top">
+		<div id="page_top_in">
+			<header id="titlebar">
+				<div class="wrapper">
+					<?php the_custom_logo(); ?>
+					<div id="titlebar_right">
+						<ul id="social_icons">
 							<?php
-							if(is_active_sidebar('same-header-icons')) {
-								dynamic_sidebar('same-header-icons');
+							if ( is_active_sidebar( 'same-header-icons' ) ) {
+								dynamic_sidebar( 'same-header-icons' );
 							}
 							?>
-                        </ul>
-                        <div class="clear"></div>
+						</ul>
+						<div class="clear"></div>
 						<?php
 							wp_nav_menu(
 								array(
@@ -64,7 +59,7 @@
 								)
 							);
 							?>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-            </header>
+					</div>
+					<div class="clear"></div>
+				</div>
+			</header>
