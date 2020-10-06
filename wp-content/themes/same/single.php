@@ -50,7 +50,7 @@ get_header();
 													else :
 														?>
 														<img src="http://dummyimage.com/606x480/c0c0c0&Text=Click here"
-															 alt="<?php echo esc_attr( get_field( 'case_single_page_photo' )['alt'] ); ?>">
+															alt="<?php echo esc_attr( get_field( 'case_single_page_photo' )['alt'] ); ?>">
 														<?php
 													endif;
 													?>

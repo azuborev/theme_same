@@ -9,7 +9,7 @@
 <!DOCTYPE HTML>
 <html <?php language_attributes(); ?>>
 <head>
-	<meta charset="<?php echo bloginfo( 'charset' ); ?>">
+	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<?php wp_head(); ?>
 </head>
 <body>
@@ -19,14 +19,14 @@
 	<ul id="stylesheets">
 		<li>
 			<a href="#" class="sheet" id="light">
-				<span class="image"><img src="<?php echo esc_attr( get_template_directory_uri() ); ?>/assets/img/gfx/stylesheet_light.jpg" alt="" /></span>
+				<span class="image"><img src="<?php echo esc_attr( get_template_directory_uri() ) . '/assets/img/gfx/stylesheet_light.jpg'; ?>" alt="" /></span>
 				<span class="mask"></span>
 				<span class="name">Light version</span>
 			</a>
 		</li>
 		<li>
 			<a href="#" class="sheet" id="dark">
-				<span class="image"><img src="<?php echo esc_attr( get_template_directory_uri() ); ?>/assets/img/gfx/stylesheet_dark.jpg" alt="" /></span>
+				<span class="image"><img src="<?php echo esc_attr( get_template_directory_uri() ) . '/assets/img/gfx/stylesheet_dark.jpg'; ?>" alt="" /></span>
 				<span class="mask"></span>
 				<span class="name">Dark version</span>
 			</a>

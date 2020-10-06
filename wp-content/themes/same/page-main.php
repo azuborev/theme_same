@@ -62,7 +62,7 @@ get_header();
 					?>
 					<div class="introduction">
 						<div>
-							<h1><?php echo get_the_excerpt(); ?></h1>
+							<h1><?php echo wp_kses( get_the_excerpt(), 'post' ); ?></h1>
 							<p><?php the_content( '' ); ?></p>
 							<a class="button button_big button_orange float_left" href="<?php the_permalink(); ?>">
 								<span class="inside"><?php esc_html_e( 'read more', 'same' ); ?></span></a>
