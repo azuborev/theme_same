@@ -171,4 +171,3 @@ function custom_shortcode_title( $post_excerpt = '' ) {
 	return do_shortcode( $post_excerpt );
 }
 add_filter( 'get_the_excerpt', 'custom_shortcode_title' );
-
