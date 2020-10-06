@@ -75,7 +75,7 @@ get_header();
 									<h1><?php the_title(); ?></h1>
 									<p><?php the_excerpt(); ?></p>
 									<a class = "button button_small button_orange" href="<?php echo esc_attr( $post->guid ); ?>">
-										<span class="inside"><?php esc_html_e( 'Read more', 'same' ); ?></a></span></a>
+										<span class="inside"><?php esc_html_e( 'Read more', 'same' ); ?></span></a>
 								</li>
 								<?php
 							}
