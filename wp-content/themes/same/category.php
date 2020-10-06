@@ -24,13 +24,11 @@ get_header();
 								<?php
 								if ( has_post_thumbnail() ) :
 									?>
-								<div class="article_image nomargin">
-									<div class="inside">
-									<?php
-									the_post_thumbnail();
-									?>
+									<div class="article_image nomargin">
+										<div class="inside">
+										<?php the_post_thumbnail(); ?>
+										</div>
 									</div>
-								</div>
 							<?php endif; ?>
 								<div class="article_details">
 									<ul class="article_author_date">
