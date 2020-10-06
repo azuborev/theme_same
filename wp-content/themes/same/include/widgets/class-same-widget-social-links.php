@@ -51,13 +51,14 @@ class Same_Widget_Social_Links extends WP_Widget {
 		$name = ( ! empty( $instance['slug'] ) ) ? $instance['slug'] : '';
 		?>
 		<p>
-			<label for = "<?php echo $this->get_field_id( 'link' ); ?>"><?php esc_html_e( 'Link', 'same' ); ?></label>
-			<input class = "widefat" id = "<?php echo $this->get_field_id( 'link' ); ?>" type = "text"
-				name = "<?php echo $this->get_field_name( 'link' ); ?>" value = "<?php echo esc_attr( $link ); ?>">
+			<label for = "<?php echo esc_attr( $this->get_field_id( 'link' ) ); ?>"><?php esc_html_e( 'Link', 'same' ); ?></label>
+			<input class = "widefat" id = "<?php echo esc_attr( $this->get_field_id( 'link' ) ); ?>" type = "text"
+				name = "<?php echo esc_attr( $this->get_field_name( 'link' ) ); ?>" value = "<?php echo esc_attr( $link ); ?>">
 		</p>
 		<p>
-			<label for = "<?php echo $this->get_field_id( 'slug' ); ?>"><?php esc_html_e( 'Social network', 'same' ); ?></label>
-			<select class = "widefat" name = "<?php echo $this->get_field_name( 'slug' ); ?>" id = "<?php echo $this->get_field_id( 'slug' ); ?>">
+			<label for = "<?php echo esc_attr( $this->get_field_id( 'slug' ) ); ?>"><?php esc_html_e( 'Social network', 'same' ); ?></label>
+			<select class = "widefat" name = "<?php echo esc_attr( $this->get_field_name( 'slug' ) ); ?>"
+					id = "<?php echo esc_attr( $this->get_field_id( 'slug' ) ); ?>">
 				<?php
 				foreach ( $this->socials as $slug => $desc ) :
 					?>

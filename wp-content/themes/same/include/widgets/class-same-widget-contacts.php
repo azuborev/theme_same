@@ -36,23 +36,23 @@ class Same_Widget_Contacts extends WP_Widget {
 			'mail'    => __( 'Email', 'same' ),
 		);
 		?>
-		<p><label for="<?php echo $this->get_field_id( 'id-info' ); ?>"><?php esc_html_e( 'Data info', 'same' ); ?></label>
+		<p><label for="<?php echo esc_attr( $this->get_field_id( 'id-info' ) ); ?>"><?php esc_html_e( 'Data info', 'same' ); ?></label>
 			<textarea
-				id="<?php echo $this->get_field_id( 'id-info' ); ?>"
+				id="<?php echo esc_attr( $this->get_field_id( 'id-info' ) ); ?>"
 				type="text"
-				name="<?php echo $this->get_field_name( 'info' ); ?>"
-				value="<?php echo $info; ?>"
+				name="<?php echo esc_attr( $this->get_field_name( 'info' ) ); ?>"
+				value="<?php echo wp_kses( $info, 'post' ); ?>"
 				class="widefat"
-			><?php echo $info; ?></textarea>
+			><?php echo wp_kses( $info, 'post' ); ?></textarea>
 		</p>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'id-var' ); ?>"><?php esc_html_e( 'Choice view', 'same' ); ?></label>
-			<select class="widefat" name="<?php echo $this->get_field_name( 'var' ); ?>" id="<?php echo $this->get_field_id( 'id-var' ); ?>">
+			<label for="<?php echo esc_attr( $this->get_field_id( 'id-var' ) ); ?>"><?php esc_html_e( 'Choice view', 'same' ); ?></label>
+			<select class="widefat" name="<?php echo esc_attr( $this->get_field_name( 'var' ) ); ?>" id="<?php echo esc_attr( $this->get_field_id( 'id-var' ) ); ?>">
 				<?php
 				foreach ( $vars as $var => $desc ) :
 					?>
-					<option value="<?php echo $var; ?>" <?php selected( $item, $var, true ); ?>
-					><?php echo $desc; ?></option>
+					<option value="<?php echo esc_attr( $var ); ?>" <?php selected( $item, $var, true ); ?>
+					><?php echo esc_attr( $desc ); ?></option>
 				<?php endforeach; ?>
 			</select>
 		</p>
@@ -70,19 +70,19 @@ class Same_Widget_Contacts extends WP_Widget {
 			case 'address':
 				$address = preg_replace( '/\n/', '<br>', $instance['info'] );
 				?>
-				<li class="address"><?php echo $address; ?></li>
+				<li class="address"><?php echo wp_kses( $address, 'post' ); ?></li>
 				<?php
 				break;
 			case 'phone':
 				$tel = preg_replace( '/\n/', '<br>', $instance['info'] );
 				?>
-				<li class="phone"><?php echo $tel; ?></li>
+				<li class="phone"><?php echo wp_kses( $tel, 'post' ); ?></li>
 				<?php
 				break;
 			case 'mail':
 				$mail = preg_replace( '/\n/', '<br>', $instance['info'] );
 				?>
-				<li class="email"><a href="mailto:<?php echo $mail; ?>"><?php echo $mail; ?></a></li>
+				<li class="email"><a href="mailto:<?php echo esc_attr( $mail ); ?>"><?php echo wp_kses( $mail, 'post' ); ?></a></li>
 				<?php
 				break;
 		}

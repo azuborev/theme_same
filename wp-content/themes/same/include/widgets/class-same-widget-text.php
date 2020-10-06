@@ -30,20 +30,20 @@ class Same_Widget_Text extends WP_Widget {
 		$title = ( ! empty( $instance['title'] ) ) ? $instance['title'] : '';
 		$text  = ( ! empty( $instance['text'] ) ) ? $instance['text'] : '';
 		?>
-		<p><label for = "<?php echo $this->get_field_id( 'title' ); ?>"><?php esc_html_e( 'Title', 'same' ); ?></label>
+		<p><label for = "<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Title', 'same' ); ?></label>
 			<input
 				class = "widefat"
-				id = "<?php echo $this->get_field_id( 'title' ); ?>"
-				type = "text" name = "<?php echo $this->get_field_name( 'title' ); ?>"
+				id = "<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"
+				type = "text" name = "<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>"
 				value = "<?php echo esc_attr( $title ); ?>">
 		</p>
 		<p>
-			<label for = "<?php echo $this->get_field_id( 'id-text' ); ?>"><?php esc_html_e( 'Input text', 'same' ); ?></label>
+			<label for = "<?php echo esc_attr( $this->get_field_id( 'id-text' ) ); ?>"><?php esc_html_e( 'Input text', 'same' ); ?></label>
 			<textarea
-				id = "<?php echo $this->get_field_id( 'id-text' ); ?>"
+				id = "<?php echo esc_attr( $this->get_field_id( 'id-text' ) ); ?>"
 				type = "text"
-				name = "<?php echo $this->get_field_name( 'text' ); ?>"
-				value = "<?php echo $text; ?>"
+				name = "<?php echo esc_attr( $this->get_field_name( 'text' ) ); ?>"
+				value = "<?php echo wp_kses( $text, 'post' ); ?>"
 				class = "widefat"
 			><?php echo esc_html( $text ); ?></textarea>
 		</p>
@@ -60,9 +60,11 @@ class Same_Widget_Text extends WP_Widget {
 
 		$title = apply_filters( 'title', $instance['title'] );
 		if ( ! empty( $title ) ) {
-			echo $args['before_title'] . $title . $args['after_title'];
+			$html = $args['before_title'] . esc_html( $title ) . $args['after_title'];
+			echo wp_kses( $html, 'post' );
 		}
-		echo apply_filters( 'same_widget_text', $instance['text'] );
+		$text = apply_filters( 'same_widget_text', $instance['text'] );
+		echo wp_kses( $text, 'post' );
 	}
 	/**
 	 * Update, save data widget.

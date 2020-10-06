@@ -39,18 +39,19 @@ class Same_Widget_Recent_Posts extends WP_Widget {
 		unset( $post_types['page'] );
 		?>
 		<p>
-			<label for = "<?php echo $this->get_field_id( 'id-title' ); ?>"><?php esc_html_e( 'Title', 'same' ); ?></label>
-			<input class = "widefat" id = "<?php echo $this->get_field_id( 'id-title' ); ?>" type = "text"
-				name = "<?php echo $this->get_field_name( 'title' ); ?>" value = "<?php echo esc_attr( $title ); ?>">
+			<label for = "<?php echo esc_attr( $this->get_field_id( 'id-title' ) ); ?>"><?php esc_html_e( 'Title', 'same' ); ?></label>
+			<input class = "widefat" id = "<?php echo esc_attr( $this->get_field_id( 'id-title' ) ); ?>" type = "text"
+				name = "<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" value = "<?php echo esc_attr( $title ); ?>">
 		</p>
 		<p>
-			<label for = "<?php echo $this->get_field_id( 'id-number' ); ?>"><?php esc_html_e( 'Number', 'same' ); ?></label>
-			<input class = "widefat" id = "<?php echo $this->get_field_id( 'id-number' ); ?>" type = "text"
-				name = "<?php echo $this->get_field_name( 'number' ); ?>" value = "<?php echo esc_attr( $number ); ?>">
+			<label for = "<?php echo esc_attr( $this->get_field_id( 'id-number' ) ); ?>"><?php esc_html_e( 'Number', 'same' ); ?></label>
+			<input class = "widefat" id = "<?php echo esc_attr( $this->get_field_id( 'id-number' ) ); ?>" type = "text"
+				name = "<?php echo esc_attr( $this->get_field_name( 'number' ) ); ?>" value = "<?php echo esc_attr( $number ); ?>">
 		</p>
 		<p>
-			<label for = "<?php echo $this->get_field_id( 'id-post-type' ); ?>"><?php esc_html_e( 'Taxonomy', 'same' ); ?></label>
-			<select class = "widefat" name = "<?php echo $this->get_field_name( 'post-type' ); ?>" id = "<?php echo $this->get_field_id( 'id-post-type' ); ?>">
+			<label for = "<?php echo esc_attr( $this->get_field_id( 'id-post-type' ) ); ?>"><?php esc_html_e( 'Taxonomy', 'same' ); ?></label>
+			<select class = "widefat" name = "<?php echo esc_attr( $this->get_field_name( 'post-type' ) ); ?>"
+					id = "<?php echo esc_attr( $this->get_field_id( 'id-post-type' ) ); ?>">
 			<?php foreach ( $post_types as $type ) : ?>
 				<option value = "<?php echo esc_attr( $type->name ); ?>" <?php selected( $post_type, $type->name ); ?>
 				><?php echo esc_html( $type->label ); ?></option>
@@ -85,7 +86,8 @@ class Same_Widget_Recent_Posts extends WP_Widget {
 
 		$title = apply_filters( 'title', $instance['title'] );
 		if ( ! empty( $title ) ) {
-			echo $args['before_title'] . $title . $args['after_title'];
+			$html = $args['before_title'] . esc_html( $title ) . $args['after_title'];
+			echo wp_kses( $html, 'post' );
 		}
 		?>
 		<ul class="recent_posts">
@@ -95,7 +97,7 @@ class Same_Widget_Recent_Posts extends WP_Widget {
 					<div class = "text">
 						<h4 class = "title"><a href="<?php the_permalink( $post->ID ); ?>"><?php echo esc_html( $post->post_title ); ?></a></h4>
 						<p class="data">
-							<span class = "date"><?php echo date( 'j/n/Y', strtotime( $post->post_date ) ); ?></span>
+							<span class = "date"><?php echo esc_html( gmdate( 'j/n/Y', strtotime( $post->post_date ) ) ); ?></span>
 						</p>
 					</div>
 				</li>
