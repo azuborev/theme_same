@@ -1,10 +1,3 @@
-/*
-Theme Name: same
-Description: theme for your portfolio
-Version: 1.0.0
-*/
-
-@import url(http://fonts.googleapis.com/css?family=Crete+Round);
 
 a {
     text-decoration: none;
@@ -97,6 +90,13 @@ input, select, textarea {
     margin: 55px 0 0 0;
     width: 172px;
     height: 18px;
+}
+
+#titlebar .custom-logo {
+    float: left;
+    margin: 40px 0 0 0;
+    width: 207px;
+    height: 50px;
 }
 
 #titlebar #titlebar_right {
@@ -237,7 +237,7 @@ input, select, textarea {
     padding: 9px 0 0 0;
     bottom: -24px;
     height: 13px;
-    background: center top url(../gfx/top_slide_shadow.png) no-repeat;
+    background: center top url(./assets/img/gfx/top_slide_shadow.png) no-repeat;
 }
 
 
@@ -260,7 +260,7 @@ input, select, textarea {
     width: 608px;
     height: 484px;
     z-index: 990;
-    background: center bottom url(../gfx/content_slide_shadow.png) no-repeat;
+    background: center bottom url(./assets/img/gfx/content_slide_shadow.png) no-repeat;
 }
 
 #content #content_slide .flexslider {
@@ -385,7 +385,7 @@ input, select, textarea {
     font-family: 'Crete Round', serif;
     font-size: 1.5em;
     line-height: 144px;
-    background: url(../gfx/light/content_ajaxform_success.png) no-repeat;
+    background: url(./assets/img/gfx/light/content_ajaxform_success.png) no-repeat;
     text-align: center;
 }
 
@@ -426,7 +426,7 @@ input, select, textarea {
     bottom: 1px;
     width: 396px;
     height: 82px;
-    background: url(../gfx/top_caption.png) repeat;
+    background: url(./assets/img/gfx/top_caption.png) repeat;
 }
 
 .page_gallery .image .caption strong {
@@ -509,7 +509,7 @@ input, select, textarea {
     bottom: -10px;
     width: 238px;
     height: 44px;
-    background-image: url(../gfx/content_page_home_portfolio_image_shadow.png);
+    background-image: url(./assets/img/gfx/content_page_home_portfolio_image_shadow.png);
     z-index: 100;
 }
 
@@ -535,7 +535,7 @@ input, select, textarea {
     width: 177px;
     height: 24px;
     color: #fff;
-    background: url(../gfx/content_page_home_portfolio_caption.png) repeat-x;
+    background: url(./assets/img/gfx/content_page_home_portfolio_caption.png) repeat-x;
     z-index: 300;
     /* Piotr Ryczek */
     display: block;
@@ -729,7 +729,7 @@ input, select, textarea {
 .page_text .article .article_image {
     margin: 0 0 40px;
     padding: 0 0 20px;
-    background: center bottom url(../gfx/content_article_image_shadow.png) no-repeat;
+    background: center bottom url(./assets/img/gfx/content_article_image_shadow.png) no-repeat;
 }
 
 .page_text .article .article_image.nomargin {
@@ -756,7 +756,7 @@ input, select, textarea {
     bottom: 23px;
     width: 242px;
     height: 140px;
-    background: url(../gfx/top_caption.png) repeat;
+    background: url(./assets/img/gfx/top_caption.png) repeat;
 }
 
 .page_text .article .article_image .caption strong {
@@ -816,7 +816,7 @@ input, select, textarea {
     width: 134px;
     height: 38px;
     font-size: 0.8125em;
-    background: url(../gfx/buttons/button_big_shadow.png) no-repeat;
+    background: url(./assets/img/gfx/buttons/button_big_shadow.png) no-repeat;
 }
 
 .page_text .button_big .inside {
@@ -824,7 +824,7 @@ input, select, textarea {
     width: 128px;
     height: 34px;
     line-height: 34px;
-    background: url(../gfx/buttons/button_big_colors.png) no-repeat;
+    background: url(./assets/img/gfx/buttons/button_big_colors.png) no-repeat;
 }
 
 .page_text .button_big.button_orange .inside {
@@ -874,7 +874,7 @@ input, select, textarea {
     width: 101px;
     height: 33px;
     font-size: 0.8125em;
-    background: url(../gfx/buttons/button_small_shadow.png) no-repeat;
+    background: url(./assets/img/gfx/buttons/button_small_shadow.png) no-repeat;
 }
 
 .page_text .button_small .inside {
@@ -882,7 +882,7 @@ input, select, textarea {
     width: 97px;
     height: 28px;
     line-height: 28px;
-    background: url(../gfx/buttons/button_small_colors.png) no-repeat;
+    background: url(./assets/img/gfx/buttons/button_small_colors.png) no-repeat;
 }
 
 .page_text .button_small.button_orange .inside {
@@ -979,7 +979,7 @@ input, select, textarea {
     float: left;
     width: 185px;
     height: 12px;
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.6875em;
     border: 0;
     background: 0;
@@ -996,7 +996,7 @@ input, select, textarea {
     float: left;
     width: 675px;
     height: 172px;
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 0.6875em;
     border: 0;
     background: 0;
@@ -1016,14 +1016,14 @@ input, select, textarea {
     float: left;
     margin: 0 22px 18px 0;
     padding: 0 0 10px;
-    background: center bottom url(../gfx/content_page_text_images_shadow.png) no-repeat;
+    background: center bottom url(./assets/img/gfx/content_page_text_images_shadow.png) no-repeat;
 }
 
 .page_text .image_right {
     float: right;
     margin: 0 0 18px 22px;
     padding: 0 0 10px;
-    background: center bottom url(../gfx/content_page_text_images_shadow.png) no-repeat;
+    background: center bottom url(./assets/img/gfx/content_page_text_images_shadow.png) no-repeat;
 }
 
 .page_text .image_left .inside,
@@ -1055,7 +1055,7 @@ input, select, textarea {
     padding: 0 0 52px;
     width: 695px;
     height: 214px;
-    background: center bottom url(../gfx/content_map_shadow.png) no-repeat;
+    background: center bottom url(./assets/img/gfx/content_map_shadow.png) no-repeat;
 }
 
 .page_text .padd16bot {
@@ -1406,25 +1406,25 @@ input, select, textarea {
 
 .page_text ul.arrows li {
     padding-left: 18px;
-    background-image: url(../gfx/content_li_arrow.png);
+    background-image: url(./assets/img/gfx/content_li_arrow.png);
     background-position: 0px 6px;
 }
 
 .page_text ul.diamonds li {
     padding-left: 13px;
-    background-image: url(../gfx/content_li_diamond.png);
+    background-image: url(./assets/img/gfx/content_li_diamond.png);
     background-position: 0px 6px;
 }
 
 .page_text ul.tics_green li {
     padding-left: 21px;
-    background-image: url(../gfx/content_li_tic_green.png);
+    background-image: url(./assets/img/gfx/content_li_tic_green.png);
     background-position: 0px 1px;
 }
 
 .page_text ul.tics_grey li {
     padding-left: 21px;
-    background-image: url(../gfx/content_li_tic_grey.png);
+    background-image: url(./assets/img/gfx/content_li_tic_grey.png);
     background-position: 0px 1px;
 }
 
@@ -1497,7 +1497,7 @@ input, select, textarea {
     margin: 0 9px 0 0;
     padding: 0 0 16px;
     width: 50px;
-    background: bottom center url(../gfx/above_footer_recent_posts_image.png) no-repeat;
+    background: bottom center url(./assets/img/gfx/above_footer_recent_posts_image.png) no-repeat;
 }
 
 .page_text .recent_posts li.item .thumbnail img {
@@ -1656,7 +1656,7 @@ input, select, textarea {
     left: -2px;
     width: 34px;
     height: 34px;
-    background: url(../gfx/stylesheet_switcher.png) no-repeat;
+    background: url(./assets/img/gfx/stylesheet_switcher.png) no-repeat;
 }
 
 #stylesheet_switcher #switcher.active {

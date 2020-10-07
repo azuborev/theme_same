@@ -5,8 +5,6 @@
  * This is the template that displays the area of the page that contains both the current comments
  * and the comment form.
  *
- * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
- *
  * @package same
  */
 
@@ -36,8 +34,7 @@ if ( post_password_required() ) {
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'
 				);
 			} else {
-				printf( 
-					/* translators: 1: comment count number, 2: title. */
+				printf(
 					esc_html( _nx( '%1$s thought on &ldquo;%2$s&rdquo;', '%1$s thoughts on &ldquo;%2$s&rdquo;', $same_comment_count, 'comments title', 'same' ) ),
 					number_format_i18n( $same_comment_count ), // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 					'<span>' . wp_kses_post( get_the_title() ) . '</span>'

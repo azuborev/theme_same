@@ -1,0 +1,32 @@
+/*
+Default style for WP-PageNavi plugin
+
+http://wordpress.org/extend/plugins/wp-pagenavi/
+*/
+
+.wp-pagenavi {
+     margin: 0 0 30px;
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.6875em;
+    text-align: center;
+
+}
+
+.wp-pagenavi a, .wp-pagenavi span {
+    border: 1px solid #BFBFBF !important;
+    padding: 6px 10px;
+    margin: 3px;
+    color: #7f7f7f;
+	font-color: #7f7f7f;
+    font-size: 11px;
+}
+
+.wp-pagenavi a:hover, .wp-pagenavi span.current {
+    color: #fff;
+	background-color: #FE7602;
+}
+
+.wp-pagenavi span.current {
+	background-color: #FE7602;
+
+}

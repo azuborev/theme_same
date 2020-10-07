@@ -20,16 +20,16 @@
 
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define( 'DB_NAME', 'same' );
+define( 'DB_NAME', 'wp_same_db' );
 
 /** Имя пользователя MySQL */
-define( 'DB_USER', 'admin' );
+define( 'DB_USER', 'wp_same_usr' );
 
 /** Пароль к базе данных MySQL */
-define( 'DB_PASSWORD', 'azuborev' );
+define( 'DB_PASSWORD', 'LRFMJMLL9T' );
 
 /** Имя сервера MySQL */
-define( 'DB_HOST', 'localhost' );
+define( 'DB_HOST', '10.40.53.5' );
 
 /** Кодировка базы данных для создания таблиц. */
 define( 'DB_CHARSET', 'utf8' );
@@ -63,7 +63,7 @@ define( 'NONCE_SALT',       'впишите сюда уникальную фра
  * Можно установить несколько сайтов в одну базу данных, если использовать
  * разные префиксы. Пожалуйста, указывайте только цифры, буквы и знак подчеркивания.
  */
-$table_prefix = 'wp_';
+$table_prefix = 'sm_';
 
 /**
  * Для разработчиков: Режим отладки WordPress.

@@ -2,16 +2,14 @@
 /**
  * The sidebar containing the main widget area
  *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
  * @package same
  */
 
-if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-	return;
-}
 ?>
-
-<aside id="secondary" class="widget-area">
-	<?php dynamic_sidebar( 'sidebar-1' ); ?>
-</aside><!-- #secondary -->
+<div class="column column25">
+	<?php
+	if ( is_active_sidebar( 'same-sidebar-aside' ) ) {
+		dynamic_sidebar( 'same-sidebar-aside' );
+	}
+	?>
+</div>
