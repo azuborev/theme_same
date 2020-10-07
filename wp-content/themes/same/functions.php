@@ -150,18 +150,6 @@ function same_widgets_init() {
 add_action( 'widgets_init', 'same_widgets_init' );
 
 /**
- * Add tag <span> in menu-header.
- *
- * @param string $title title in menu.
- *
- * @return string in tag <span>.
- */
-function filter_nav_menu_item_title( $title = '' ) {
-	return '<span>' . $title . '</span>';
-}
-add_filter( 'nav_menu_item_title', 'filter_nav_menu_item_title' );
-
-/**
  * Add shortcode for excerpt.
  *
  * @param string $post_excerpt The post excerpt.

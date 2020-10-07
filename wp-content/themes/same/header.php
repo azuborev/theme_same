@@ -54,6 +54,8 @@
 									'theme_location' => 'menu-header',
 									'container'      => 'nav',
 									'menu_id'        => 'top_menu',
+									'link_before'    => '<span>',
+									'link_after'     => '</span>',
 									'item_wrap'      => '<ul id="%1$s"><span>%3$s<span></ul>',
 									'walker'         => new Header_Menu_Walker(),
 								)
