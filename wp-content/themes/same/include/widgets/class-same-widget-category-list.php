@@ -106,7 +106,7 @@ class Same_Widget_Category_List extends WP_Widget {
 	 */
 	public function update( $new_instance = array(), $old_instance = array() ) {
 		$instance             = array();
-		$instance['title']    = ( ! empty( $new_instance['title'] ) ) ? wp_strip_all_tags( $new_instance['title'] ) : 'awrgerg';
+		$instance['title']    = ( ! empty( $new_instance['title'] ) ) ? wp_strip_all_tags( $new_instance['title'] ) : '';
 		$instance['taxonomy'] = ( ! empty( $new_instance['taxonomy'] ) ) ? wp_strip_all_tags( $new_instance['taxonomy'] ) : '';
 		return $instance;
 	}
