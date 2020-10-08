@@ -76,7 +76,7 @@ add_action( 'wp_enqueue_scripts', 'same_scripts' );
 function same_widgets_init() {
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar: aside', 'same' ),
+			'name'          => __( 'Sidebar: aside', 'same' ),
 			'id'            => 'same-sidebar-aside',
 			'description'   => esc_html__( 'Add widgets here.', 'same' ),
 			'before_widget' => '<div class="padd16bot">',
@@ -87,7 +87,7 @@ function same_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar: social links', 'same' ),
+			'name'          => __( 'Sidebar: social links', 'same' ),
 			'id'            => 'same-header-icons',
 			'before_widget' => null,
 			'after_widget'  => null,
@@ -95,7 +95,7 @@ function same_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar in footer - after columns', 'same' ),
+			'name'          => __( 'Sidebar in footer - after columns', 'same' ),
 			'id'            => 'same-footer-after-col',
 			'before_widget' => null,
 			'after_widget'  => null,
@@ -103,7 +103,7 @@ function same_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar in footer - 1', 'same' ),
+			'name'          => __( 'Sidebar in footer - 1', 'same' ),
 			'id'            => 'same-footer-col-1',
 			'before_widget' => null,
 			'after_widget'  => null,
@@ -113,7 +113,7 @@ function same_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar in footer - 2', 'same' ),
+			'name'          => __( 'Sidebar in footer - 2', 'same' ),
 			'id'            => 'same-footer-col-2',
 			'before_widget' => null,
 			'after_widget'  => null,
@@ -123,7 +123,7 @@ function same_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar in footer - 3', 'same' ),
+			'name'          => __( 'Sidebar in footer - 3', 'same' ),
 			'id'            => 'same-footer-col-3',
 			'before_widget' => null,
 			'after_widget'  => null,
@@ -133,7 +133,7 @@ function same_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Sidebar in footer - 4', 'same' ),
+			'name'          => __( 'Sidebar in footer - 4', 'same' ),
 			'id'            => 'same-footer-col-4',
 			'before_widget' => null,
 			'after_widget'  => null,
