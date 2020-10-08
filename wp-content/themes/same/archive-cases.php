@@ -46,9 +46,8 @@ get_header();
 						'post_status'      => 'publish',
 						'meta_query'       => array(
 							array(
-								'key'     => 'case_portfolio_page',
-								'compare' => '==',
-								'value'   => '1',
+								'key'   => 'case_portfolio_page',
+								'value' => '1',
 							),
 						),
 						'suppress_filters' => true,

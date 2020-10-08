@@ -20,16 +20,16 @@
 
 // ** Параметры MySQL: Эту информацию можно получить у вашего хостинг-провайдера ** //
 /** Имя базы данных для WordPress */
-define( 'DB_NAME', 'wp_same_db' );
+define( 'DB_NAME', 'same' );
 
 /** Имя пользователя MySQL */
-define( 'DB_USER', 'wp_same_usr' );
+define( 'DB_USER', 'admin' );
 
 /** Пароль к базе данных MySQL */
-define( 'DB_PASSWORD', 'LRFMJMLL9T' );
+define( 'DB_PASSWORD', 'azuborev' );
 
 /** Имя сервера MySQL */
-define( 'DB_HOST', '10.40.53.5' );
+define( 'DB_HOST', 'localhost' );
 
 /** Кодировка базы данных для создания таблиц. */
 define( 'DB_CHARSET', 'utf8' );
@@ -46,14 +46,14 @@ define( 'DB_COLLATE', '' );
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'впишите сюда уникальную фразу' );
-define( 'SECURE_AUTH_KEY',  'впишите сюда уникальную фразу' );
-define( 'LOGGED_IN_KEY',    'впишите сюда уникальную фразу' );
-define( 'NONCE_KEY',        'впишите сюда уникальную фразу' );
-define( 'AUTH_SALT',        'впишите сюда уникальную фразу' );
-define( 'SECURE_AUTH_SALT', 'впишите сюда уникальную фразу' );
-define( 'LOGGED_IN_SALT',   'впишите сюда уникальную фразу' );
-define( 'NONCE_SALT',       'впишите сюда уникальную фразу' );
+define( 'AUTH_KEY', 't^d(!q^lzV&l;FY*[^ESicL>1Il1p8RXWftZP)[mo],!Q|}0-5g68|ER)~{#+lCZ' );
+define( 'SECURE_AUTH_KEY', 'L)H[iTH7ZICx554j9AB@V]rpatG-+a_PV/>ZB62ubJWjH+hQ|$:?}26/MtM!A@.e' );
+define( 'LOGGED_IN_KEY', 'm@Al`[]N|aoK?u->Img1l-}3gT[dei.q_./8~%:.8Z)iVr:G?YxOzkC:qeaOE[:+' );
+define( 'NONCE_KEY', '>-l)SKh;@a?V/c,e+>h-E{nj;]=V1=CU?#G_6:,uBcFYs$$2gNFq)FKBxi*MUDi(' );
+define( 'AUTH_SALT', 'g:#&<gp^S ^BZ86Q;dKa)Tfw&G|k ihol|<^$U|-GA6!G&?+lr,yP]T}R?C:yg8X' );
+define( 'SECURE_AUTH_SALT', 'YhiHfzj*4L}19$9`4WeM?1MMfHmy=Jd-pdtZxT9Yda-?$PEi+,@ChfP!hFiKk@5`' );
+define( 'LOGGED_IN_SALT', 'od$NEnc}74C!3zz4vV6YI7gr X-%K!bO0B?90vCv#znUo7x8IAeTY:+0~{2?Ob`}' );
+define( 'NONCE_SALT', 'd:W~GGS+gX:>U~/==w*.p2|]JY U&v8B|#uNJVPOdfUK0~7Iz#)T6~CzqV(Ik^yF' );
 
 /**#@-*/
 
@@ -89,4 +89,3 @@ if ( ! defined( 'ABSPATH' ) ) {
 require_once( ABSPATH . 'wp-settings.php' );
 
 define( 'FS_METHOD', 'direct' );
-
