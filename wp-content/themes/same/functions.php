@@ -27,7 +27,8 @@ if ( ! defined( '_S_VERSION' ) ) {
 	define( '_S_VERSION', '1.0.0' );
 }
 
-if ( ! function_exists( 'same_setup' ) ) :
+if ( ! function_exists( 'same_setup' ) ) {
+
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features..
 	 */
@@ -38,11 +39,11 @@ if ( ! function_exists( 'same_setup' ) ) :
 		load_theme_textdomain( 'same', get_template_directory() . '/languages' );
 		register_nav_menus(
 			array(
-				'menu-header' => esc_html__( 'Menu in header', 'same' ),
+				'menu-header' => __( 'Menu in header', 'same' ),
 			)
 		);
 	}
-endif;
+}
 add_action( 'after_setup_theme', 'same_setup' );
 /**
  * Enqueue scripts and styles.
@@ -78,7 +79,7 @@ function same_widgets_init() {
 		array(
 			'name'          => __( 'Sidebar: aside', 'same' ),
 			'id'            => 'same-sidebar-aside',
-			'description'   => esc_html__( 'Add widgets here.', 'same' ),
+			'description'   => __( 'Add widgets here.', 'same' ),
 			'before_widget' => '<div class="padd16bot">',
 			'after_widget'  => '</div>',
 			'before_title'  => '<h1 class="widget-title">',
