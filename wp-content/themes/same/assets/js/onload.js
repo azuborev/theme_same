@@ -81,22 +81,10 @@ $(document).ready(function(){
 	
 		var verification=true;
 	
-		if(name.val()==''){
+		if((name.val()=='') || (email.val()=='') || (subject.val()=='') || (message.val()=='')){
 			verification=false;
 		}
-	
-		if(email.val()==''){
-			verification=false;
-		}
-	
-		if(subject.val()==''){
-			verification=false;
-		}
-	
-		if(message.val()==''){
-			verification=false;
-		}
-	
+
 		if(verification==true){
 			$('#result').fadeIn();
 			$('#result').html('<em>Please Wait...</em>');
