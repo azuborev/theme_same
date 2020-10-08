@@ -102,46 +102,9 @@ function same_widgets_init() {
 			'after_widget'  => null,
 		)
 	);
-	register_sidebar(
-		array(
-			'name'          => __( 'Sidebar in footer - 1', 'same' ),
-			'id'            => 'same-footer-col-1',
-			'before_widget' => null,
-			'after_widget'  => null,
-			'before_title'  => '<h3>',
-			'after_title'   => '</h3>',
-		)
-	);
-	register_sidebar(
-		array(
-			'name'          => __( 'Sidebar in footer - 2', 'same' ),
-			'id'            => 'same-footer-col-2',
-			'before_widget' => null,
-			'after_widget'  => null,
-			'before_title'  => '<h3>',
-			'after_title'   => '</h3>',
-		)
-	);
-	register_sidebar(
-		array(
-			'name'          => __( 'Sidebar in footer - 3', 'same' ),
-			'id'            => 'same-footer-col-3',
-			'before_widget' => null,
-			'after_widget'  => null,
-			'before_title'  => '<h3>',
-			'after_title'   => '</h3>',
-		)
-	);
-	register_sidebar(
-		array(
-			'name'          => __( 'Sidebar in footer - 4', 'same' ),
-			'id'            => 'same-footer-col-4',
-			'before_widget' => null,
-			'after_widget'  => null,
-			'before_title'  => '<h3>',
-			'after_title'   => '</h3>',
-		)
-	);
+	$sidebar_num = 4;
+	set_same_sidebar_footer( $sidebar_num );
+
 	register_widget( 'same_widget_social_links' );
 	register_widget( 'same_widget_text' );
 	register_widget( 'same_widget_contacts' );
@@ -149,6 +112,27 @@ function same_widgets_init() {
 	register_widget( 'same_widget_recent_posts' );
 }
 add_action( 'widgets_init', 'same_widgets_init' );
+
+/**
+ * Register array of area for sidebar in footer.
+ *
+ * @param integer $num sidebar's number.
+ */
+function set_same_sidebar_footer( int $num ) {
+	$name = __( 'Sidebar in footer ', 'same' );
+	for ( $i = 1; $i <= $num; $i++ ) {
+		register_sidebar(
+			array(
+				'name'          => $name . $i,
+				'id'            => 'same-footer-col-' . $i,
+				'before_widget' => null,
+				'after_widget'  => null,
+				'before_title'  => '<h3>',
+				'after_title'   => '</h3>',
+			)
+		);
+	}
+}
 
 /**
  * Add shortcode for excerpt.
